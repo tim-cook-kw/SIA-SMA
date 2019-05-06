@@ -12,4 +12,13 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
+    //for moment.js
+    .scripts([
+        'node_modules/moment/moment.js'
+    ], 'public/js/moment.js')  
+    //for nprogress.js
+    .scripts([
+        'node_modules/nprogress/nprogress.js'
+    ], 'public/js/nprogress.js')
+    .styles(['node_modules/nprogress/nprogress.css'], 'public/css/nprogress.css')
    .sass('resources/sass/app.scss', 'public/css');
