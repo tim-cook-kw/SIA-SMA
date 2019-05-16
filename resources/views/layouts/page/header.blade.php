@@ -141,7 +141,7 @@
         <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="index.html">
                 <img class="logo_light" src="{{asset('template/images/logo_white.png')}}" alt="logo" />
-                <img class="gambar1" src="{{asset('template/images/gambar1.png')}}" alt="logo" />
+                <img class="gambar1" src="{{asset('template/images/Tempatgambar/gambar1.png')}}" height="100" width="120" alt="logo" />
                 <img class="logo_default" src="{{asset('template/images/logo_dark.png')}}" alt="logo" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -150,7 +150,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="dropdown">
-                        <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Beranda</a>
+                        <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Dashboard</a>
                         <div class="dropdown-menu">
                             <ul>
                                 <li><a class="dropdown-item nav-link nav_item" href="index.html">Profile Sekolah</a>
@@ -218,9 +218,18 @@
                         <li><a class="dropdown-item nav-link nav_item" href="course-detail.html">Info Penerimaan Siswa Baru</a></li>
                     </ul>
                 </div>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Extrakulikuler</a>
+                <li class="dropdown">
+                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">ExtraKulikuler</a>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a class="dropdown-item nav-link nav_item" href="blog.html">Drum Band</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="blog-detail.html">Futsal</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="blog-detail.html">Pramuka</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="blog-detail.html">Pmr</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="blog-detail.html">Bola Basket</a></li>
+                        <li><a class="dropdown-item nav-link nav_item" href="blog-detail.html">Bola Voli</a></li>
+                    </ul>
+                </div>
             </li>
             <li class="dropdown">
                 <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Teacher</a>

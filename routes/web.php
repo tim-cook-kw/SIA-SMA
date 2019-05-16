@@ -34,3 +34,6 @@ Route::get('/blog_details', function () {
 Route::get('/course', function () {
     return view('course');
 });
+Route::get('/ABOUTUS', function () {
+    return view('about_us');
+});

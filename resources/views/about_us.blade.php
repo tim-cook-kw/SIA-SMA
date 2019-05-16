@@ -25,7 +25,7 @@
 <section class="bg_gray">
     <div class="container">
     	<div class="row justify-content-center">
-        	<div class="col-md-6">
+        	<div class="col-md-4">
             	<div class="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
                     <div class="heading_s1 text-center">
                         <h2>Why Choose Eduglobal</h2>
@@ -107,7 +107,7 @@
                 	<div class="overlay_bg_30 about_img z_index_minus1">	
                     	<img class="w-100" src="{{asset('template/images/about_img.jpg')}}" alt="about_img"/>
                     </div>
-                	<a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video_popup video_play">
+                	<a href="https://www.youtube.com/watch?v=XL32m40QeMk" class="video_popup video_play">
                     	<span class="ripple"><i class="ion-play ml-1"></i></span>
                     </a>
                 </div>
@@ -115,7 +115,7 @@
         </div>
     </div>
 </section>
-<!-- END SECTION ABOUT -->
+<!-- END SECTION ABOUT
 
 <!-- START SECTION TEACHER -->
 <section class="parallax_bg overlay_bg_blue_90" data-parallax-bg-image="{{asset('template/images/teacher_bg.jpg')}}">

@@ -31,7 +31,19 @@
 
                             <li>
                                 <a class="sidenav-item-link" href="index.html">
-                                    <span class="nav-text">Edit Profile</span>
+                                    <span class="nav-text">Profile</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="index.html">
+                                    <span class="nav-text">Program</span>
+
+                                </a>
+                            </li>
+                            <li>
+                                <a class="sidenav-item-link" href="index.html">
+                                    <span class="nav-text">News</span>
 
                                 </a>
                             </li>
@@ -63,7 +75,7 @@
 
                             <li>
                                 <a class="sidenav-item-link" href="index.html">
-                                    <span class="nav-text">Parents</span>
+                                    <span class="nav-text">Wali Murid</span>
 
                                 </a>
                             </li>

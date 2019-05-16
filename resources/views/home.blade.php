@@ -261,7 +261,7 @@
                 	<div class="overlay_bg_30 about_img z_index_minus1">	
                     	<img class="w-100" src="{{asset('template/images/about_img.jpg')}}" alt="about_img"/>
                     </div>
-                	<a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video_popup video_play">
+                	<a href="https://www.youtube.com/watch?v=884hjNQ_DYw" class="video_popup video_play">
                     	<span class="ripple"><i class="ion-play ml-1"></i></span>
                     </a>
                 </div>
@@ -328,7 +328,7 @@
     	<div class="row justify-content-center">
         	<div class="col-md-6">
             	<div class="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
-                	<a href="https://www.youtube.com/watch?v=7e90gBu4pas" class="video_popup">
+                	<a href="https://www.youtube.com/watch?v=yeZXWOL1jtM" class="video_popup">
                     	<span class="ripple"><i class="ion-play ml-1"></i></span>
                     </a>
                     <div class="mt-md-5 mt-4 text_white animation" data-animation="fadeInUp" data-animation-delay="0.02s">

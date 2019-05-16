@@ -25,7 +25,7 @@
             <div class="row">
                 <div class="col-lg-3 col-sm-8 mb-4 mb-lg-0">
                 	<div class="footer_logo">
-                    	<a href="index.html"><img alt="logo" src="{{asset('template/images/footer_logo.png')}}"></a>
+                    	<a href="index.html"><img alt="logo" src="{{asset('template/images/Tempatgambar/gambar1.png')}}"height="100" width="100" alt="logo"[]></a>
                     </div>
                     <p>Phasellus blandit massa enim. elit id varius nunc. Lorem ipsum dolor sit amet, consectetur industry.</p>
                     <ul class="contact_info contact_info_light list_none">
@@ -116,15 +116,15 @@
     <div class="bottom_footer bg_blue_dark2">
     	<div class="container">
         	<div class="row align-items-center">
-            	<div class="col-md-6">
-                	<p class="copyright m-md-0 text-center text-md-left">© 2018 All Rights Reserved by Eduglobal.</p>
+            	<div class="col-md-12">
+                	<p class="copyright m-md-0 text-center text-md-center">© 2018 All Rights Reserved by SIA-SMA.</p>
                 </div>
-                <div class="col-md-6">
+                <!-- <div class="col-md-6">
                 	<ul class="list_none footer_link text-center text-md-right">
                     	<li><a href="#">Privacy Policy</a></li>
                         <li><a href="#">Terms &amp; Conditions</a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
