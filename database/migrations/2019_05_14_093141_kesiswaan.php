@@ -13,7 +13,7 @@ class Kesiswaan extends Migration
      */
     public function up()
     {
-        Schema::create('profile', function (Blueprint $table) {
+        Schema::create('kesiswaa', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_parent');
             $table->integer('nis')->nullable();
@@ -24,8 +24,12 @@ class Kesiswaan extends Migration
             $table->integer('phone');
             $table->integer('tahun_masuk');
             $table->integer('religion');
-                    
-            
+            $table->string('origin_of_school');
+            $table->integer('tahun_lulus');
+            $table->string('username');
+            $table->integer('password');
+            $table->string('image');
+
         });
 
     }
