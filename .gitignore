@@ -10,7 +10,10 @@ Homestead.yaml
 npm-debug.log
 yarn-error.log
 
+/public/js/app.js
 mix-manifest.json
 nprogress.css
 moment.js
 nprogress.js
+datatable.js
+datatable.css

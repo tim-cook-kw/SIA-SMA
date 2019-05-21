@@ -40208,7 +40208,7 @@ module.exports = function(module) {
  * includes Vue and other libraries. It is a great starting point when
  * building robust, powerful web applications using Vue and Laravel.
  */
-window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+window.$ = window.jQuery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"); // require('jquery/src/jquery.js');
 
 __webpack_require__(/*! sleek-dashboard/dist/assets/plugins/daterangepicker/daterangepicker.js */ "./node_modules/sleek-dashboard/dist/assets/plugins/daterangepicker/daterangepicker.js");
 
