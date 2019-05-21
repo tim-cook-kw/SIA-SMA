@@ -24,6 +24,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.2",
     "datatables.net": "^1.10.19",
     "datatables.net-bs4": "^1.10.19",
     "moment": "^2.24.0",
