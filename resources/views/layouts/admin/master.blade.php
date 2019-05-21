@@ -9,7 +9,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
+    <script src="{{ asset('js/app.js') }}"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!-- GOOGLE FONTS -->
@@ -31,7 +32,7 @@
     <script type="text/javascript" src="{{ asset('js/nprogress.js') }}"></script>
 </head>
 
-<body class="header-fixed sidebar-fixed sidebar-dark header-light" id="body">
+<body class="header-fixed sidebar-static sidebar-dark header-light" id="body">
     <script>
         NProgress.configure({
             showSpinner: false

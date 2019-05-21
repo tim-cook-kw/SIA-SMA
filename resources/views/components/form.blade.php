@@ -1,7 +1,6 @@
 <form method="POST" enctype="multipart/form-data">
     @csrf
     @method('POST')
-
     <div class="modal-header">
         <h5 class="modal-title">Default</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
