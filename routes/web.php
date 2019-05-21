@@ -22,3 +22,16 @@ Route::get('/welcome', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::prefix('admin')->group(function () {
+    Route::get('dashboard', function () {
+        return view('admin.index');
+    })->name('admin.dashboard');
+    // Route::resource('user', 'Admin\UserController');
+    Route::resource('role', 'Admin\RoleController');
+});
+
+Route::prefix('datatable')->group(function () {
+    // Route::get('user-datatable', 'DataTable\UserDataTableController@index')->name('datatable.users');
+    Route::get('role-datatable', 'DataTable\RoleDataTableController@index')->name('datatable.role');
+});
