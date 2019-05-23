@@ -11,17 +11,21 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/admin', function () {
     return view('layouts.admin.master');
 });
 
-Route::get('/welcome', function () {
-    return view('welcome');
+Route::get('/about', function () {
+    return view('about_us');
 });
 
-Auth::routes();
+Route::get('/', function(){
+    return view('home');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/blog', function () {
+    return view('blog');
+});
 
 Route::prefix('admin')->group(function () {
     Route::get('dashboard', function () {
@@ -34,4 +38,15 @@ Route::prefix('admin')->group(function () {
 Route::prefix('datatable')->group(function () {
     // Route::get('user-datatable', 'DataTable\UserDataTableController@index')->name('datatable.users');
     Route::get('role-datatable', 'DataTable\RoleDataTableController@index')->name('datatable.role');
+});
+
+Route::get('/blog_details', function () {
+    return view('blog_details');
+});
+
+Route::get('/course', function () {
+    return view('course');
+});
+Route::get('/ABOUTUS', function () {
+    return view('about_us');
 });
