@@ -2,9 +2,6 @@
 @section('content')
 <div class="table-wrapper">
             <div class="table-title">
-            <div class="pull-right">
-        <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-plus"></i> New</button>
-         </div>
                 <div class="row">
                     <div class="col-sm-4">
 						<div class="show-entries">
@@ -19,7 +16,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<h2 class="text-center">Master <b>Kepegawaian</b></h2>
+						<h2 class="text-center">MATERI</h2>
 					</div>
                     <div class="col-sm-4">
                         <div class="search-box">
@@ -35,26 +32,16 @@
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Nip <i class="fa fa-sort"></i></th>
-                        <th>Nama</th>
-                        <th>T.Tgl lahir<i class="fa fa-sort"></i></th>
-                        <th>Alamat</th>
-                        <th>Telp <i class="fa fa-sort"></i></th>
-                        <th>Foto <i class="fa fa-sort"></i></th>
-                        <th>Hak Akses <i class="fa fa-sort"></i></th>
+                        <th>Guru/pembimbing <i class="fa fa-sort"></i></th>
+                        <th>Materi</th>
                         <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>1</td>
-                        <td>00010010000</td>
-                        <td>Thomas Hardy<</td>
-                        <td>Jakarta 11-05-01</td>
-                        <td>Cideng tn abang</td>
-                        <td>085921580500</td>
-                        <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90" height="60"> </td>
-                        <td>Admin</td>
+                        <td>Sukriman</td>
+                        <td>MTK</td>
                         <td>
                             <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
                             <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
@@ -76,5 +63,4 @@
             </div>
         </div>
     </div>
-    @include('master.modal.add_kepegawaian')
 @endsection

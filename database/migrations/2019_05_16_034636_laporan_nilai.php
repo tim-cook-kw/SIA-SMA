@@ -13,7 +13,7 @@ class LaporanNilai extends Migration
      */
     public function up()
     {
-        Schema::create('nilai', function (Blueprint $table) {
+        Schema::create('laporan_nilai', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('id_nilai');
             $table->integer('id_teacher');

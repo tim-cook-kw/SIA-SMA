@@ -91,13 +91,13 @@
                     <ul class="collapse" id="ui-elements" data-parent="#sidebar-menu">
                         <div class="sub-menu">
                         <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('jadwal_guru')}}">
                                     <span class="nav-text">Jadwal Guru</span>
 
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('materi')}}">
                                     <span class="nav-text">Materi</span>
 
                                 </a>
@@ -111,11 +111,11 @@
                                     <div class="sub-menu">
 
                                         <li>
-                                            <a href="alert.html">Kelola Management Kelas</a>
+                                            <a href="{{url('kelola_siswa')}}">Kelola Management Kelas</a>
                                         </li>
 
                                         <li>
-                                            <a href="badge.html">Tambah Siswa</a>
+                                            <a href="{{url('tambah_siswa')}}">Tambah Siswa</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -130,11 +130,7 @@
                                     <div class="sub-menu">
 
                                         <li>
-                                            <a href="alert.html">Kelola Nilai Siswa</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="badge.html">Liat Nilai Siswa</a>
+                                            <a href="{{url('kelola_nilai')}}">Kelola Nilai Siswa</a>
                                         </li>
                                     </div>
                                 </ul>

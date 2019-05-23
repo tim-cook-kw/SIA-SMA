@@ -40264,8 +40264,8 @@ __webpack_require__(/*! sleek-dashboard/dist/assets/js/sleek.bundle.js */ "./nod
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/sultan/Master/myproject/laravel/sistem_akademik/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/sultan/Master/myproject/laravel/sistem_akademik/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\Users\trainer\SIA-SMA\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\trainer\SIA-SMA\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
