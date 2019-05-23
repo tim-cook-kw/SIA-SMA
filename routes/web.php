@@ -80,3 +80,10 @@ Route::get('/kelola_nilai',function(){
 Route::get('/nilai_tugas',function(){
     return view('akademik.nilai_tugas');
 });
+Route::get('/program',function(){
+    return view('dashboard.program');
+});
+Route::get('/news',function(){
+    return view('dashboard.news');
+});
+

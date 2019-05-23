@@ -4,7 +4,7 @@
 <section class="banner_section p-0 full_screen">
     <div id="carouselExampleControls" class="banner_content_wrap carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active background_bg overlay_bg_50" data-img-src="{{asset('template/images/banner7.jpg')}}">
+            <div class="carousel-item active background_bg overlay_bg_50" data-img-src="{{asset('template/images/Tempatgambar/dwi-warna.jpg')}}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                     <div class="row justify-content-center">
@@ -20,7 +20,7 @@
                 </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/banner8.jpg')}}">
+            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/Tempatgambar/ponpes-al-masoem.jpg')}}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row justify-content-center">
@@ -82,7 +82,7 @@
 </section>
 <!-- END SECTION BANNER -->
 
-<section class="p-0 overlap_box">
+<!-- <section class="p-0 overlap_box">
     <div class="container">
         <div class="row">
             <div class="col-12">
@@ -139,13 +139,13 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- START SECTION FEATURE -->
 <section class="small_pb">
     <div class="container">
     	<div class="row justify-content-center">
-        	<div class="col-md-6">
+        	<div class="col-md-6 mt-5">
             	<div class="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
                     <div class="heading_s1 text-center">
                         <h2>Why Choose Us</h2>
@@ -342,7 +342,7 @@
 <!-- END SECTION VIDEO -->
 
 <!-- START SECTION COURSES -->
-<section>
+<!-- <section>
 	<div class="container">
     	<div class="row justify-content-center">
         	<div class="col-xl-6 col-lg-8">
@@ -557,11 +557,11 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- END SECTION COURSES -->
 
 <!-- START SECTION COUNTER -->
-<section class="parallax_bg overlay_bg_blue_70" data-parallax-bg-image="{{asset('template/images/video_bg.jpg')}}">
+<!-- <section class="parallax_bg overlay_bg_blue_70" data-parallax-bg-image="{{asset('template/images/video_bg.jpg')}}">
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3 col-6 ">
@@ -610,11 +610,11 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- END SECTION COUNTER -->
 
 <!-- START SECTION EVENT -->
-<section>
+<!-- <section>
 	<div class="container">
     	<div class="row justify-content-center">
         	<div class="col-xl-6 col-lg-8">
@@ -696,7 +696,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- START SECTION EVENT -->
 
 <!-- START SECTION INQUIRY -->
@@ -906,7 +906,7 @@
 <!-- END SECTION TESTIMONIAL -->
 
 <!-- START SECTION BLOG -->
-<section class="bg_gray">
+<!-- <section class="bg_gray">
 	<div class="container">
     	<div class="row">
         	<div class="col-md-12">
@@ -995,11 +995,11 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 <!-- END SECTION BLOG -->
 
 <!-- START SECTION CLIENT LOGO -->
-<section class="light_gray_bg">
+<!-- <section class="light_gray_bg">
 	<div class="container">
     	<div class="row justify-content-center">
         	<div class="col-xl-6 col-lg-8">
@@ -1037,5 +1037,5 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 @endsection

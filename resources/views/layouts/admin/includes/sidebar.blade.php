@@ -36,13 +36,13 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('program')}}">
                                     <span class="nav-text">Program</span>
 
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('news')}}">
                                     <span class="nav-text">News</span>
 
                                 </a>
@@ -139,49 +139,7 @@
                         </div>
 
                     </ul>
-                    <li class="has-sub">
-                    <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
-                        data-target="#data_statis" aria-expanded="false" aria-controls="data_statis">
-                        <i class="mdi mdi-folder-multiple-outline"></i>
-                        <span class="nav-text">Data Statis</span> <b class="caret"></b>
-                    </a>
-                    <ul class="collapse" id="data_statis" data-parent="#sidebar-menu">
-                        <div class="sub-menu">
-
-                            <li class="has-sub">
-                                <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
-                                    data-target="#management" aria-expanded="false" aria-controls="management">
-                                    <span class="nav-text">Menu Ui</span> <b class="caret"></b>
-                                </a>
-                                <ul class="collapse" id="management">
-                                    <div class="sub-menu">
-
-                                        <li>
-                                            <a href="alert.html">Menu</a>
-                                        </li>
-
-                                        <li>
-                                            <a href="badge.html">Sub Menu</a>
-                                        </li>
-                                    </div>
-                                </ul>
-                                <li>
-                                <a class="sidenav-item-link" href="index.html">
-                                    <span class="nav-text">Data Sekolah</span>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sidenav-item-link" href="index.html">
-                                    <span class="nav-text">Profile Sekolah</span>
-
-                                </a>
-                            </li>
-
-                </li>
-            </ul>
-
-        </div>
+                    
 
         <hr class="separator" />
 
