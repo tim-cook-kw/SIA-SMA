@@ -16,8 +16,8 @@
                 'table_id' => 'role-datatable',
                 'route_name' => 'datatable.role',
                 'columns' => [
-                ['header' => 'User'],
-                ['header' => 'Product'],
+                ['header' => 'Name'],
+                ['header' => 'Description'],
                 ]
                 ])
                 @endcomponent

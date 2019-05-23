@@ -30,7 +30,7 @@
 
 
                             <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('profile')}}">
                                     <span class="nav-text">Profile</span>
 
                                 </a>
@@ -61,26 +61,19 @@
                         <div class="sub-menu">
 
                             <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('master_kepegaiawan')}}">
                                     <span class="nav-text">Kepegaiwan</span>
 
                                 </a>
                             </li>
 
                             <li class="active">
-                                <a class="sidenav-item-link" href="analytics.html">
+                                <a class="sidenav-item-link" href="{{url('master_kesiswaan')}}">
                                     <span class="nav-text">Kesiswaaan</span>
                                 </a>
                             </li>
-
                             <li>
-                                <a class="sidenav-item-link" href="index.html">
-                                    <span class="nav-text">Wali Murid</span>
-
-                                </a>
-                            </li>
-                            <li>
-                                <a class="sidenav-item-link" href="index.html">
+                                <a class="sidenav-item-link" href="{{url('master_mata_pelajaran')}}">
                                     <span class="nav-text">Mata Pelajaran</span>
 
                                 </a>

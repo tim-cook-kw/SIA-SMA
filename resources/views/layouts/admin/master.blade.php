@@ -12,11 +12,16 @@
     {{-- <script src="{{ asset('js/app.js') }}" defer></script> --}}
     <script src="{{ asset('js/app.js') }}"></script>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500|Poppins:400,500,600,700|Roboto:400,500"
         rel="stylesheet" />
     <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css" />
+    <link href="{{ asset('css/table.css') }}" rel="stylesheet">
 
     <link href="{{ asset('css/nprogress.css') }}" rel="stylesheet">
     @stack('styles')
@@ -38,6 +43,7 @@
             showSpinner: false
         });
         NProgress.start();
+
     </script>
     <div class="mobile-sticky-body-overlay"></div>
     <div class="wrapper">
@@ -63,7 +69,7 @@
         <div class="page-wrapper">
             <!-- Header -->
             @include('layouts.admin.includes.header')
-            
+
             <div class="content-wrapper">
                 <div class="content">
                     {{-- <div class="row">
@@ -74,11 +80,12 @@
                     @yield('content')
                 </div>
             </div>
-            
+
             @include('layouts.admin.includes.footer')
         </div>
     </div>
     <script type="text/javascript" src="{{ asset('js/moment.js') }}"></script>
     @stack('scripts')
 </body>
+
 </html>
