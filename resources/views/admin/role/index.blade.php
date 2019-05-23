@@ -59,9 +59,18 @@
                     success: function (data) {
                         $('#input-role-modal').modal('hide');
                         table.ajax.reload();
+                        Swal.fire(
+                            'Good job!',
+                            save_method,
+                            'success'
+                        )
                     },
                     error: function () {
-                        alert("Error!");
+                        Swal.fire({
+                            type: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!'
+                        })
                     }
                 });
                 return false;
@@ -93,28 +102,69 @@
                 $('#description').val(data.description);
             },
             error: function () {
-                alert("Tidak dapat menampilkan data!");
+                Swal.fire({
+                    type: 'error',
+                    title: 'Oops...',
+                    text: 'Something went wrong!'
+                })
             }
         });
     }
 
     function deleteData(id) {
-        if (confirm("Are you sure?")) {
-            $.ajax({
-                url: "role/" + id,
-                type: "POST",
-                data: {
-                    '_method': 'DELETE',
-                    '_token': $('meta[name=csrf-token]').attr('content')
-                },
-                success: function (data) {
-                    $("#role-datatable").DataTable().ajax.reload();
-                },
-                error: function () {
-                    alert("Error!");
-                }
-            });
-        }
+        const swalWithBootstrapButtons = Swal.mixin({
+            customClass: {
+                confirmButton: 'btn btn-success',
+                cancelButton: 'btn btn-danger'
+            },
+            buttonsStyling: false,
+        })
+
+        swalWithBootstrapButtons.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, delete it!',
+            cancelButtonText: 'No, cancel!',
+            reverseButtons: true
+        }).then((result) => {
+            if (result.value) {
+                $.ajax({
+                    url: "role/" + id,
+                    type: "POST",
+                    data: {
+                        '_method': 'DELETE',
+                        '_token': $('meta[name=csrf-token]').attr('content')
+                    },
+                    success: function (data) {
+                        $("#role-datatable").DataTable().ajax.reload();
+                        swalWithBootstrapButtons.fire(
+                            'Deleted!',
+                            'Your file has been deleted.',
+                            'success'
+                        )
+                    },
+                    error: function () {
+                        Swal.fire({
+                            type: 'error',
+                            title: 'Oops...',
+                            text: 'Something went wrong!'
+                        })
+                    }
+                });
+            } else if (
+                // Read more about handling dismissals
+                result.dismiss === Swal.DismissReason.cancel
+            ) {
+                swalWithBootstrapButtons.fire(
+                    'Cancelled',
+                    'Your imaginary file is safe :)',
+                    'error'
+                )
+            }
+        })
     }
+
 </script>
 @endpush

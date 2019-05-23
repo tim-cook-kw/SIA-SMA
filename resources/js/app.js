@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -14,6 +13,19 @@ require('sleek-dashboard/dist/assets/plugins/jvectormap/jquery-jvectormap-2.0.3.
 require('sleek-dashboard/dist/assets/plugins/jvectormap/jquery-jvectormap-world-mill.js');
 
 require('sleek-dashboard/dist/assets/js/sleek.bundle.js');
+require('sweetalert2/dist/sweetalert2.js');
+// import Swal from 'sweetalert2/dist/sweetalert2.js'
+
+window.Swal = require('sweetalert2/dist/sweetalert2');
+// const Toast = Swal.mixin({
+//     toast: true,
+//     position: 'top-end',
+//     showConfirmButton: false,
+//     timer: 3000
+// });
+// window.Toast = Toast;
+
+
 
 // window.Vue = require('vue');
 
