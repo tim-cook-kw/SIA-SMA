@@ -37,3 +37,15 @@ Route::get('/course', function () {
 Route::get('/ABOUTUS', function () {
     return view('about_us');
 });
+Route::get('/profile',function(){
+    return view('dashboard.profile');
+});
+Route::get('/master_kepegaiawan',function(){
+    return view('master.kepegawaian');
+});
+Route::get('/master_kesiswaan',function(){
+    return view('master.kesiswaan');
+});
+Route::get('/master_mata_pelajaran',function(){
+    return view('master.mata_pelajaran');
+});
