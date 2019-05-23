@@ -62,3 +62,21 @@ Route::get('/master_kesiswaan',function(){
 Route::get('/master_mata_pelajaran',function(){
     return view('master.mata_pelajaran');
 });
+Route::get('/jadwal_guru',function(){
+    return view('akademik.jadwal_guru');
+});
+Route::get('/materi',function(){
+    return view('akademik.materi');
+});
+Route::get('/tambah_siswa',function(){
+    return view('akademik.tambah_siswa');
+});
+Route::get('/kelola_siswa',function(){
+    return view('akademik.kelola_siswa');
+});
+Route::get('/kelola_nilai',function(){
+    return view('akademik.kelola_nilai');
+});
+Route::get('/nilai_tugas',function(){
+    return view('akademik.nilai_tugas');
+});
