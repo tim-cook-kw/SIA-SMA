@@ -10,6 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::post('add_kepegawaian','MasterController@kepegawaian');
 
 Route::get('/admin', function () {
     return view('layouts.admin.master');
@@ -53,9 +54,10 @@ Route::get('/ABOUTUS', function () {
 Route::get('/profile',function(){
     return view('dashboard.profile');
 });
-Route::get('/master_kepegaiawan',function(){
-    return view('master.kepegawaian');
-});
+Route::get('/master_kepegaiawan','MasterController@get_kepegawaian');
+Route::get('/master_kepegaiawan/{id}','MasterController@hapus_kepegawaian');
+Route::post('/master_kepegaiawan/update/','MasterController@update_kepegawaian');
+
 Route::get('/master_kesiswaan',function(){
     return view('master.kesiswaan');
 });

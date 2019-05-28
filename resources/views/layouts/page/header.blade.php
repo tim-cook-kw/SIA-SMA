@@ -255,18 +255,14 @@
             </li>
             </ul>
     </div>
-    <ul class="navbar-nav attr-nav align-items-center">
-        <li><a href="javascript:void(0);" class="nav-link search_trigger"><i class="ion-ios-search-strong"></i></a>
-            <div class="search-overlay">
-                <div class="search_wrap">
-                    <form>
-                        <input type="text" placeholder="Search" class="form-control" id="search_input">
-                        <button type="submit" class="search_icon"><i class="ion-ios-search-strong"></i></button>
-                    </form>
-                </div>
-            </div>
-        </li>
-    </ul>
+    <div class="container">
+    <div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Search">
+  <div class="input-group-append">
+    <button class="btn btn-success" type="submit">Go</button>
+  </div>
+</div>
+</div>
     </nav>
     </div>
 </header>

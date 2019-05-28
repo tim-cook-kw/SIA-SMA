@@ -46,20 +46,22 @@
                     </tr>
                 </thead>
                 <tbody>
+                @foreach($kepegawaian as $k)
                     <tr>
-                        <td>1</td>
-                        <td>00010010000</td>
-                        <td>Thomas Hardy<</td>
-                        <td>Jakarta 11-05-01</td>
-                        <td>Cideng tn abang</td>
-                        <td>085921580500</td>
-                        <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90" height="60"> </td>
-                        <td>Admin</td>
+                        <td>{{$k->id}}</td>
+                        <td>{{$k->nip}}</td>
+                        <td>{{$k->name}}</td>
+                        <td>{{$k->birth_date}}</td>
+                        <td>{{$k->address}}</td>
+                        <td>{{$k->phone}}</td>
+                        <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90" height="60">{{$k->image}} </td>
+                        <td>{{$k->position}}</td>
                         <td>
-                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            <button  data-toggle="modal" data-target="#modalUpdate" class="edit" title="Edit"><i class="material-icons">&#xE254;</i></button>
+                            <a href="master_kepegaiawan/{{$k->id}}" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
             <div class="clearfix">
@@ -76,5 +78,6 @@
             </div>
         </div>
     </div>
-    @include('master.modal.add_kepegawaian')
+  @include('master.modal.update_kepegawaian')
+  @include('master.modal.add_kepegawaian')  
 @endsection

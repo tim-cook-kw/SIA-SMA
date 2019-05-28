@@ -18,7 +18,7 @@ class Kepegawaian extends Migration
             $table->integer('role_id');
             $table->integer('nip')->nullable();
             $table->string('name');
-            $table->date('birth_date');
+            $table->string('birth_date');
             $table->string('address');
             $table->integer('phone');
             $table->string('image');
