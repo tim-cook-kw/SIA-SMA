@@ -2,32 +2,35 @@
 @section('content')
 <div class="table-wrapper">
     <div class="table-title">
-        <div class="form-group row" >
-            <label class="col-sm-2 col-form-label">Kode Pelajaran</label>
-            <div class="col-sm-2">
-                <input type="email" class="form-control" id="inputEmail3" placeholder="0001" disabled>
+        <div class="row">
+            <div class="col">
+                    <div class="form-group">
+                            <div class="form-group">
+                                <label for="kodeKelas"> Kode Kelas </label>
+                                <input type="text" class="form-control" name="kodeKelas" id="kodeKelas" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="kodeKelas"> Semester </label>
+                                <input type="text" class="form-control" name="kodeKelas" id="kodeKelas" disabled>
+                            </div>
+                    </div>
             </div>
-            <label class="col-sm-2 col-form-label">Mata Pelajaran</label>
-            <div class="col-sm-2">
-                <select class="custom-select my-1 mr-sm-2"  disabled>
-                    <option selected>MTK</option>
-                </select>
+            <div class="col">
+                    <div class="form-group">
+                            <div class="form-group">
+                                <label for="kodeKelas"> Mata Pelajaran </label>
+                                <input type="text" class="form-control" name="kodeKelas" id="kodeKelas" disabled>
+                            </div>
+                            <div class="form-group">
+                                <label for="kodeKelas"> Guru Pengajar </label>
+                                <input type="text" class="form-control" name="kodeKelas" id="kodeKelas" disabled>
+                            </div>
+                    </div>
+            </div>
+        </div>
+        <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#modalAdd"><i
+            class="glyphicon glyphicon-plus"></i> New</button>
 
-            </div>
-        </div>
-        <div class="form-group row">
-            <label class="col-sm-2 col-form-label">Semester</label>
-            <div class="col-sm-2">
-            <select class="custom-select my-1 mr-sm-2"  disabled>
-                    <option selected>Ganjil</option>
-                </select>
-            </div>
-            <label class="col-sm-2 col-form-label">Guru Pengajar</label>
-            <div class="col-sm-2">
-            <select class="custom-select my-1 mr-sm-2"  disabled>
-                    <option selected>Sukirman S.P.G</option>
-                </select>            </div>
-        </div>
         <div class="row">
             <div class="col-sm-4">
                 <div class="show-entries">

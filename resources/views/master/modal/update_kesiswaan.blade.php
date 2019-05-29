@@ -1,4 +1,4 @@
-<div id="modalUpdate" class="modal fade" role="dialog">
+<div id="update_kesiswaan" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->
@@ -7,7 +7,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form action="master_kepegaiawan/update/" method="post">
+                <form action="master_kesiswaan/update/" method="post">
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -15,8 +15,8 @@
                             <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4">Nip</label>
-                            <input type="text" name="nip" class="form-control" id="inputPassword4" placeholder="Nip">
+                            <label for="inputPassword4">Nisn</label>
+                            <input type="text" name="nisn" class="form-control" id="inputPassword4" placeholder="Nip">
                         </div>
                     </div>
                     <div class="form-group">

@@ -22,12 +22,12 @@
 
 
         <div class="col-md-12">
-            <h4>Program Extrakulikuler | <button type="submit" class='btn btn-primary mb-1 btn-sm'> Tambah </button></h4>
+            <h4>Program Extrakulikuler | <button type="submit" class='btn btn-success mb-1 btn-sm'> Tambah </button></h4>
             <div class="table-responsive">
 
 
                 <table id="mytable" class="table table-bordred table-striped">
-                    
+
                     <thead>
 
                         <th><input type="checkbox" id="checkall" /></th>

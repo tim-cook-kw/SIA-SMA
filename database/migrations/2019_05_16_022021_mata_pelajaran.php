@@ -13,11 +13,11 @@ class MataPelajaran extends Migration
      */
     public function up()
     {
-        Schema::create('subject', function (Blueprint $table) {
+        Schema::create('mata_pelajaran', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('subject_code');
-            $table->string('subject');
-            $table->string('information');
+            $table->integer('kode_pelajaran');
+            $table->string('nama_pelajaran');
+            $table->string('nama_guru');
         });
     }
 

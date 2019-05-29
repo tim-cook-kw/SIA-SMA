@@ -2,6 +2,8 @@
 @section('content')
 <div class="table-wrapper">
             <div class="table-title">
+                    <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#modalAdd"><i
+                        class="glyphicon glyphicon-plus"></i> New</button>
                 <div class="row">
                     <div class="col-sm-4">
 						<div class="show-entries">

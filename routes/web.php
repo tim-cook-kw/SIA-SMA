@@ -55,18 +55,32 @@ Route::get('/profile',function(){
     return view('dashboard.profile');
 });
 Route::get('/master_kepegaiawan','MasterController@get_kepegawaian');
+Route::post('/master_kepegaiawan/add/','MasterController@Kepegawaian');
 Route::get('/master_kepegaiawan/{id}','MasterController@hapus_kepegawaian');
 Route::post('/master_kepegaiawan/update/','MasterController@update_kepegawaian');
 
-Route::get('/master_kesiswaan',function(){
-    return view('master.kesiswaan');
-});
-Route::get('/master_mata_pelajaran',function(){
-    return view('master.mata_pelajaran');
-});
-Route::get('/jadwal_guru',function(){
-    return view('akademik.jadwal_guru');
-});
+Route::get('/master_kesiswaan','MasterController@get_kesiswaan');
+Route::post('/master_kesiswaan/add','MasterController@kesiswaan');
+Route::get('/master_kesiswaan/{id}','MasterController@hapus_kesiswaan');
+Route::post('/master_kesiswaan/update/','MasterController@update_kesiswaan');
+
+Route::get('/master_mata_pelajaran','MasterController@get_mata_pelajaran');
+Route::post('/master_mata_pelajaran/add','MasterController@mata_pelajaran');
+Route::get('/master_mata_pelajaran/{id}','MasterController@hapus_mata_pelajaran');
+Route::post('/master_mata_pelajaran/update/','MasterController@update_mata_pelajaran');
+
+
+Route::get('/jadwal_guru','MasterController@get_jadwal_pelajaran');
+Route::post('/jadwal_guru/add','MasterController@jadwal_pelajaran');
+Route::get('/jadwal_guru/{id}','MasterController@hapus_jadwal_guru');
+Route::post('/jadwal_guru/update/','MasterController@update_jadwal_guru');
+
+
+
+
+
+
+
 Route::get('/materi',function(){
     return view('akademik.materi');
 });
