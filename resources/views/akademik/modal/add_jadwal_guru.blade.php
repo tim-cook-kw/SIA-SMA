@@ -1,4 +1,4 @@
-<div id="add_jadwal_pelajaran" class="modal fade" role="dialog">
+<div id="modalAdd" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
             <!-- Modal content-->
@@ -7,7 +7,7 @@
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <form action="{{ url('master_kesiswaan/add/') }}" method="POST">
+                    <form action="{{ url('akademik_jadwal_guru/add/') }}" method="POST">
                         @csrf
                         <div class="form-row">
                             <div class="form-group col-md-6">
@@ -78,5 +78,6 @@
             </div>
 
         </div>
+    </div>
     </div>
     </div>

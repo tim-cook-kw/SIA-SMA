@@ -70,10 +70,10 @@ Route::get('/master_mata_pelajaran/{id}','MasterController@hapus_mata_pelajaran'
 Route::post('/master_mata_pelajaran/update/','MasterController@update_mata_pelajaran');
 
 
-Route::get('/jadwal_guru','MasterController@get_jadwal_pelajaran');
-Route::post('/jadwal_guru/add','MasterController@jadwal_pelajaran');
-Route::get('/jadwal_guru/{id}','MasterController@hapus_jadwal_guru');
-Route::post('/jadwal_guru/update/','MasterController@update_jadwal_guru');
+Route::get('/akademik_jadwal_guru','AkademikController@get_jadwal_guru');
+Route::post('/akademik_jadwal_guru/add','AkademikController@jadwal_guru');
+Route::get('/akademik_jadwal_guru/{id}','AkademikController@hapus_jadwal_guru');
+Route::post('/akademik_jadwal_guru/update/','AkademikController@update_jadwal_guru');
 
 
 

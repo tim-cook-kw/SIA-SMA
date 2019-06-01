@@ -49,7 +49,7 @@
         <tr>
             <td>}</td>
             <td>00010010000</td>
-            <td>kode pelaja</td>
+            <td>kode pelajaran</td>
             <td>Julham</td>
             <td>
                     <button data-toggle="modal" data-target="#update_mata_pelajaran" class="edit" title="Edit"><i

@@ -91,7 +91,7 @@
                     <ul class="collapse" id="ui-elements" data-parent="#sidebar-menu">
                         <div class="sub-menu">
                         <li>
-                                <a class="sidenav-item-link" href="{{url('jadwal_guru')}}">
+                                <a class="sidenav-item-link" href="{{url('akademik_jadwal_guru')}}">
                                     <span class="nav-text">Jadwal Guru</span>
 
                                 </a>

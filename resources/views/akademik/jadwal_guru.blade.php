@@ -3,7 +3,7 @@
 <div class="table-wrapper">
     <div class="table-title">
         <div class="pull-right">
-            <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#modalAdd"><i
+        <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#modalAdd"><i
                     class="glyphicon glyphicon-plus"></i> New</button>
             <div class="row">
                 <div class="col-sm-4">
@@ -47,13 +47,14 @@
         @foreach($jadwal_guru as $k)
         <tr>
             <td>{{$k->id}}</td>
-            <td>{{ $k->guru }}</td>
+            <td>{{$k->id_guru}}</td>
+            <td>{{ $k->nama_guru }}</td>
             <td>{{ $k->tanggal }}</td>
             <td>{{ $k->nama_pelajaran }}</td>
             <td>
                     <button data-toggle="modal" data-target="#jadwal_guru" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
-                        <a href="master_kesiswaan/{{$k->id}}" class="delete" title="Delete" data-toggle="tooltip"><i
+                        <a href="akademik_jadwal_guru/{{$k->id}}" class="delete" title="Delete" data-toggle="tooltip"><i
                             class="material-icons">&#xE872;</i></a>
             </td>
         </tr>
@@ -74,6 +75,6 @@
 </div>
 </div>
 </div>
-@include('master.modal.add_jadwal_guru')
-@include('master.modal.update_jadwal_guru')
+@include('akademik.modal.add_jadwal_guru')
+@include('akademik.modal.update_jadwal_guru')
 @endsection
