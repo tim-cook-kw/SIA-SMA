@@ -15,7 +15,7 @@
                                 <option>15</option>
                                 <option>20</option>
                             </select>
-                            <span>entries</span>
+                            <span>entrie</span>
                         </div>
                     </div>
                     <div class="col-sm-4">
