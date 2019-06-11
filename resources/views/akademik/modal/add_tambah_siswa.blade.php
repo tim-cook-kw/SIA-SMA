@@ -7,7 +7,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form action="{{ url('master_kepegaiawan/add/') }}" method="POST">
+                <form action="{{ url('akademik_tambah_siswa/add/') }}" method="POST">
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -15,38 +15,24 @@
                             <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputPassword4">Nip</label>
-                            <input type="text" name="nip" class="form-control" id="inputPassword4" placeholder="Nip">
+                            <label for="inputPassword4">Nis</label>
+                            <input type="text" name="nisn" class="form-control" id="inputPassword4" placeholder="Nip">
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label for="inputAddress">Alamat</label>
-                        <input type="text" name="alamat" class="form-control" id="inputAddress"
-                            placeholder="1234 Main St">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nama Kelas</label>
+                        <input type="text" name="kelas" class="form-control" id="inputEmail4" placeholder="Nama Kelas">
                     </div>
+
                     <div class="form-group">
-                        <label for="inputAddress2">Tempat Tanggal Lahir</label>
+                        <label for="inputAddress2">Tahun Ajaran</label>
                         <input type="text" name="birth_date" class="form-control" id="inputAddress2"
                             placeholder="Bekasi 11-05-2001">
                     </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Jenis Kelamimn</label>
-                        <select name="gender" id="inputState" class="form-control">
-                            <option value="pria">laki-laki</option>
-                            <option value="perempuan">perempuan</option>
-                        </select>
-                    </div>
 
-                        <div class="form-group">
-                            <label for="inputAddress2">Position</label>
-                            <input type="text" name="position" class="form-control" id="inputAddress2"
-                                placeholder="position">
-                        </div>
+
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">Telp</label>
-                                <input type="text" name="telp" class="form-control" id="inputCity">
-                            </div>
+
                             <div class="form-group col-md-4">
                                 <label for="inputState">Hak akses</label>
                                 <select name="hak_akses" id="inputState" class="form-control">
@@ -54,10 +40,7 @@
                                     <option>...</option>
                                 </select>
                             </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlFile1">Masukan Foto 3x4</label>
-                                <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1">
-                            </div>
+
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -70,4 +53,6 @@
         </div>
 
     </div>
+</div>
+</div>
 </div>

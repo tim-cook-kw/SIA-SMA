@@ -18,7 +18,7 @@
 						</div>
 					</div>
 					<div class="col-sm-4">
-						<h2 class="text-center">MATERI</h2>
+						<h2 class="text-center">Tambah Siswa</h2>
 					</div>
                     <div class="col-sm-4">
                         <div class="search-box">
@@ -70,4 +70,6 @@
             </div>
         </div>
     </div>
+@include('akademik.modal.add_tambah_siswa')
+@include('akademik.modal.update_tambah_siswa')
 @endsection

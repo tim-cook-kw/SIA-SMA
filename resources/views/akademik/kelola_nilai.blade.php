@@ -29,4 +29,6 @@
             </div>
         </div>
     </div>
+    @include('akademik.modal.add_kelola_nilai')
+    @include('akademik.modal.update_kelola_nilai')
     @endsection

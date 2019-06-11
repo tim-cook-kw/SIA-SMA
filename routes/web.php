@@ -75,6 +75,31 @@ Route::post('/akademik_jadwal_guru/add','AkademikController@jadwal_guru');
 Route::get('/akademik_jadwal_guru/{id}','AkademikController@hapus_jadwal_guru');
 Route::post('/akademik_jadwal_guru/update/','AkademikController@update_jadwal_guru');
 
+Route::get('/akademik_kelola_nilai','AkademikController@get_kelola_nliai');
+Route::post('/akademik_kelola_nilai/add','AkademikController@kelola_nilai');
+Route::get('/akademik_kelola_nilai/{id}','AkademikController@hapus_kelola_nilai');
+Route::post('/akademik_kelola_nilai/update/','AkademikController@update_kelola_nilai');
+
+Route::get('/akademik_kelola_kelas','AkademikController@get_kelola_kelas');
+Route::post('/akademik_kelola_kelas/add','AkademikController@kelola_kelas');
+Route::get('/akademik_kelola_kelas/{id}','AkademikController@hapus_kelola_kelas');
+Route::post('/akademik_kelola_kelas/update/','AkademikController@update_kelola_kelas');
+
+Route::get('/akademik_materi','AkademikController@get_materi');
+Route::post('/akademik_materi/add','AkademikController@materi');
+Route::get('/akademik_materi/{id}','AkademikController@hapus_materi');
+Route::post('/akademik_materi/update/','AkademikController@update_materi');
+
+Route::get('/akademik_nilai_tugas','AkademikController@get_nilai_tugas');
+Route::post('/akademik_nilai_tugas/add','AkademikController@nilai_tugas');
+Route::get('/akademik_nilai_tugas/{id}','AkademikController@hapus_nilai_tugas');
+Route::post('/akademik_nilai_tugas/update/','AkademikController@update_nilai_tugas');
+
+Route::get('/akademik_tambah_siswa','AkademikController@get_tambah_siswa');
+Route::post('/akademik_tambah_siswa_/add','AkademikController@tambah_siswa');
+Route::get('/akademik_tambah_siswa/{id}','AkademikController@hapus_tambah_siswa');
+Route::post('/akademik_tambah_siswa/update/','AkademikController@update_tambah_siswa');
+
 
 
 
@@ -87,8 +112,8 @@ Route::get('/materi',function(){
 Route::get('/tambah_siswa',function(){
     return view('akademik.tambah_siswa');
 });
-Route::get('/kelola_siswa',function(){
-    return view('akademik.kelola_siswa');
+Route::get('/kelola_kelas',function(){
+    return view('akademik.kelola_kelas');
 });
 Route::get('/kelola_nilai',function(){
     return view('akademik.kelola_nilai');

@@ -69,4 +69,6 @@
     </div>
 </div>
 </div>
+@include('akademik.modal.add_materi')
+@include('akademik.modal.update_materi')
 @endsection

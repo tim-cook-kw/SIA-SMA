@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <h2 class="text-center">MATERI</h2>
+                        <h2 class="text-center">KELOLA KELAS</h2>
                     </div>
                     <div class="col-sm-4">
                         <div class="search-box">
@@ -31,13 +31,12 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
     <table class="table table-bordered">
         <thead>
             <tr>
                 <th>No</th>
                 <th>Kode Kelas<i class="fa fa-sort"></i></th>
+                <th>Nama siswa/siswi<i class="fa fa-sort"></i></th>
                 <th>Nama kelas<i class="fa fa-sort"></i></th>
                 <th>Guru/Wali kelas <i class="fa fa-sort"></i></th>
                 <th>Tahun ajaran</th>
@@ -48,6 +47,7 @@
             <tr>
                 <td>1</td>
                 <td>KLS0001</td>
+                <td>Budi</td>
                 <td>Tkj 3</td>
                 <td>Sudirman</td>
                 <td>2019/2020</td>
@@ -74,4 +74,5 @@
     </div>
 </div>
 </div>
+@include('akademik.modal.add_kelola_kelas')
 @endsection

@@ -105,13 +105,13 @@
                             <li class="has-sub">
                                 <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
                                     data-target="#management" aria-expanded="false" aria-controls="management">
-                                    <span class="nav-text">management kelas</span> <b class="caret"></b>
+                                    <span class="nav-text">Management Kelas</span> <b class="caret"></b>
                                 </a>
                                 <ul class="collapse" id="management">
                                     <div class="sub-menu">
 
                                         <li>
-                                            <a href="{{url('kelola_siswa')}}">Kelola Management Kelas</a>
+                                            <a href="{{url('kelola_kelas')}}">Kelola kelas</a>
                                         </li>
 
                                         <li>
@@ -139,7 +139,7 @@
                         </div>
 
                     </ul>
-                    
+
 
         <hr class="separator" />
 

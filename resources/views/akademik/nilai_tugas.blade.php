@@ -91,4 +91,6 @@
     </div>
 </div>
 </div>
+@include('akademik.modal.add_nilai_tugas')
+@include('akademik.modal.update_nilai_tugas')
 @endsection
