@@ -31,6 +31,7 @@
   <![endif]-->
     {{-- <script src="assets/plugins/nprogress/nprogress.js"></script> --}}
     <script type="text/javascript" src="{{ asset('js/nprogress.js') }}"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 <body class="header-fixed sidebar-static sidebar-dark header-light" id="body">
@@ -80,6 +81,7 @@
             @include('layouts.admin.includes.footer')
         </div>
     </div>
+
     <script type="text/javascript" src="{{ asset('js/moment.js') }}"></script>
     @stack('scripts')
 </body>

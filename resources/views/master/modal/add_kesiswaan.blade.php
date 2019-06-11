@@ -11,54 +11,38 @@
             @csrf
         <div class="form-row">
           <div class="form-group col-md-6">
-            <label for="inputEmail4">Nama</label>
+            <label for="inputEmail4">Nama Siswa</label>
             <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
           </div>
           <div class="form-group col-md-6">
             <label for="inputPassword4">Nisn</label>
             <input type="text" name="nisn" class="form-control" id="inputPassword4" placeholder="Nip">
           </div>
+
         </div>
+        <div class="form-group ">
+                <label for="inputPassword4">Nama Orang tua</label>
+                  <input type="text" name="country_name" id="country_name" class="form-control input-lg" placeholder="Nama Orang tua" />
+                <div id="countryList">
+                     </div>
+                        </div>
         <div class="form-group">
-          <label for="inputAddress">Alamat</label>
-          <input type="text" name="alamat" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <label for="inputAddress2">Tahun Masuk</label>
+          <input type="text" name="birth_date" class="form-control" id="inputAddress2" placeholder="11-05-2001">
         </div>
+        <div class="form-group col-md-6">
+            <label for="inputEmail4">Asal Sekolah</label>
+            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+          </div>
+
         <div class="form-group">
-          <label for="inputAddress2">Tempat Tanggal Lahir</label>
-          <input type="text" name="birth_date" class="form-control" id="inputAddress2" placeholder="Bekasi 11-05-2001">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Jenis Kelamimn</label>
+          <label for="inputAddress2">Jenis Kelamin</label>
           <select name="gender" id="inputState" class="form-control">
               <option value="pria">laki-laki</option>
               <option value="perempuan">perempuan</option>
             </select>
         </div>
-        <div class="form-group">
-          <label for="inputAddress2">Agama</label>
-          <select name="agama" id="inputState" class="form-control">
-              <option value="1">islam</option>
-              <option value="2">kristen</option>
-              <option value="3">hindu</option>
-              <option value="4">budha</option>
-              <option value="5">konghu cu</option>
-            </select>
-            <div class="form-group">
-          <label for="inputAddress2">Position</label>
-          <input type="text" name="position" class="form-control" id="inputAddress2" placeholder="position">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">Telp</label>
-            <input type="text" name="telp" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">Hak akses</label>
-            <select name="hak_akses" id="inputState" class="form-control">
-              <option value="1"selected>Admin</option>
-              <option>...</option>
-            </select>
-          </div>
+
           <div class="form-group">
           <label for="exampleFormControlFile1">Masukan Foto 3x4</label>
           <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1">

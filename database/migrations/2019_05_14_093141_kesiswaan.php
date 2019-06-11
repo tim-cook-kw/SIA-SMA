@@ -19,15 +19,12 @@ class Kesiswaan extends Migration
             $table->integer('nis')->nullable();
             $table->string('name');
             $table->string('address');
-            $table->date('birth_date');
+            $table->string('birth_date');
             $table->string('gender');
             $table->integer('phone');
             $table->integer('tahun_masuk');
             $table->integer('religion');
             $table->string('origin_of_school');
-            $table->integer('tahun_lulus');
-            $table->string('username');
-            $table->integer('password');
             $table->string('image');
 
         });

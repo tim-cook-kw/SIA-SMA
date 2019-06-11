@@ -25,6 +25,15 @@
                             placeholder="1234 Main St">
                     </div>
                     <div class="form-group">
+                        <label for="inputAddress2">Agama</label>
+                        <select name="agama" id="inputState" class="form-control">
+                            <option value="1">islam</option>
+                            <option value="2">kristen</option>
+                            <option value="3">hindu</option>
+                            <option value="4">budha</option>
+                            <option value="5">konghu cu</option>
+                          </select>
+                    <div class="form-group">
                         <label for="inputAddress2">Tempat Tanggal Lahir</label>
                         <input type="text" name="birth_date" class="form-control" id="inputAddress2"
                             placeholder="Bekasi 11-05-2001">
@@ -54,6 +63,7 @@
                                     <option>...</option>
                                 </select>
                             </div>
+
                             <div class="form-group">
                                 <label for="exampleFormControlFile1">Masukan Foto 3x4</label>
                                 <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1">

@@ -45,14 +45,14 @@
         @foreach ($mata_pelajaran as $k)
 
         <tr>
-            <td>}</td>
+            <td>1</td>
             <td>00010010000</td>
-            <td>kode pelajaran</td>
-            <td>Julham</td>
+            <td>{{ $k->nama_pelajaran }}</td>
+            <td>{{ $k->nama_guru }}</td>
             <td>
                     <button data-toggle="modal" data-target="#update_mata_pelajaran" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
-                <a href="mata_pelajaran/{{  }}" class="delete" title="Delete" data-toggle="tooltip"><i
+                <a href="master_mata_pelajaran/{{ $k->id }}" class="delete" title="Delete" data-toggle="tooltip"><i
                     class="material-icons">&#xE872;</i></a>
             </td>
         @endforeach

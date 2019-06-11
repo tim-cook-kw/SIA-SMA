@@ -57,7 +57,7 @@ Route::get('/profile',function(){
 Route::get('/master_kepegaiawan','MasterController@get_kepegawaian');
 Route::post('/master_kepegaiawan/add/','MasterController@Kepegawaian');
 Route::get('/master_kepegaiawan/{id}','MasterController@hapus_kepegawaian');
-Route::post('/master_kepegaiawan/update/','MasterController@update_kepegawaian');
+Route::post('/master_kepegaiawan/update/{id}','MasterController@update_kepegawaian');
 
 Route::get('/master_kesiswaan','MasterController@get_kesiswaan');
 Route::post('/master_kesiswaan/add','MasterController@kesiswaan');
@@ -67,7 +67,7 @@ Route::post('/master_kesiswaan/update/','MasterController@update_kesiswaan');
 Route::get('/master_mata_pelajaran','MasterController@get_mata_pelajaran');
 Route::post('/master_mata_pelajaran/add','MasterController@mata_pelajaran');
 Route::get('/master_mata_pelajaran/{id}','MasterController@hapus_mata_pelajaran');
-Route::post('/master_mata_pelajaran/update/','MasterController@update_mata_pelajaran');
+Route::post('/master_mata_pelajaran/update/{id}','MasterController@update_mata_pelajaran');
 
 
 Route::get('/akademik_jadwal_guru','AkademikController@get_jadwal_guru');
@@ -104,7 +104,9 @@ Route::post('/akademik_tambah_siswa/update/','AkademikController@update_tambah_s
 
 
 
-
+Route::get('/master_parent',function(){
+    return view('master.parents');
+});
 
 Route::get('/materi',function(){
     return view('akademik.materi');

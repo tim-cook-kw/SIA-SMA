@@ -56,7 +56,7 @@
                 <td>{{$k->address}}</td>
                 <td>{{$k->phone}}</td>
                 <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
-                        height="60">{{$k->image}} </td>
+                        height="60"> </td>
                 <td>{{$k->position}}</td>
                 <td>
                     <button data-toggle="modal" data-target="#modalUpdate" class="edit" title="Edit"><i

@@ -3,7 +3,7 @@
 <div class="table-wrapper">
     <div class="table-title">
         <div class="pull-right">
-            <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#tmbh_kesiswaan"><i
+            <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#add_parent"><i
                     class="glyphicon glyphicon-plus"></i> New</button>
             <div class="row">
                 <div class="col-sm-4">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <h2 class="text-center">Master <b>Kesiswaan</b></h2>
+                    <h2 class="text-center">Master <b>Parents</b></h2>
                 </div>
                 <div class="col-sm-4">
                     <div class="search-box">
@@ -35,36 +35,36 @@
     <thead>
         <tr>
             <th>No</th>
-            <th>Nisn <i class="fa fa-sort"></i></th>
-            <th>Nama</th>
-            <th>Tahun masuk<i class="fa fa-sort"></i></th>
-            <th>Sekolah asal</th>
-            <th>Jenis Kelamin <i class="fa fa-sort"></i></th>
-            <th>Foto <i class="fa fa-sort"></i></th>
-            <th>Status<i class="fa fa-sort"></i></th>
+            <th>Nama ayah </th>
+            <th>Nama ibu</th>
+            <th>Agama ayah</th>
+            <th>Agama Ibu</th>
+            <th>Pendidikan Terakhir Ayah</th>
+            <th>Pendidikan Terakhir Ibu</th>
+            <th>Pekerjaan Ayah</th>
+            <th>Pekerjaan Ibu</th>
+
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
-            @foreach($kesiswaa as $kesiswaan)
         <tr>
             <td>1</td>
-            <td>00010010000</td>
-            <td>Thomas Hardy</td>
-            <td>2018/2019</td>
-            <td>Sekolah islam FPI</td>
-            <td>2019/2020</td>
-            <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
-                    height="60"> </td>
-            <td>Siswa</td>
+            <td>budi</td>
+            <td>juminah</td>
+            <td>islam</td>
+            <td>islam</td>
+            <td>SMA</td>
+            <td>SMA</td>
+            <td>Boss</td>
+            <td>Boss</td>
             <td>
-                    <button data-toggle="modal" data-target="#update_kesiswaan" class="edit" title="Edit"><i
+                    <button data-toggle="modal" data-target="#update_parents" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
-                        <a href="master_kesiswaan/{{$kesiswaan->id}}" class="delete" title="Delete" data-toggle="tooltip"><i
+                        <a href="master_parent/" class="delete" title="Delete" data-toggle="tooltip"><i
                             class="material-icons">&#xE872;</i></a>
             </td>
         </tr>
-        @endforeach
     </tbody>
 </table>
 <div class="clearfix">
@@ -81,7 +81,8 @@
 </div>
 </div>
 </div>
-@include('master.modal.add_kesiswaan')
-@include('master.modal.update_kesiswaan')
+@include('master.modal.add_parent')
+@include('master.modal.update_parent')
 
 @endsection
+

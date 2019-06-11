@@ -7,7 +7,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form action="master_kepegaiawan/update/" method="post">
+                <form action="master_kepegaiawan/update/{{ $k->id }}" method="post">
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">

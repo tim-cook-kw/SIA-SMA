@@ -63,13 +63,11 @@ class MasterController extends Controller
         'tahun_masuk' =>$request->tahun_masuk,
         'religion' =>$request->agama,
         'origin_of_school' =>$request->origin_of_school,
-        'tahun_lulus' =>$request->tahun_lulus,
-        'username' =>$request->password,
         'image' =>$request->image,
       ]);
       return redirect()->back();
     }
-    public function get_Kesiswaan()
+    public function get_Kesiswaan(Request $request)
     {
         $kesiswaa = DB::table('kesiswaa')->get();
         return view('master.kesiswaan',compact('kesiswaa'));
@@ -100,16 +98,8 @@ class MasterController extends Controller
     public function mata_pelajaran(Request $request)
     {
       DB::table('mata_pelajaran')->insert([
-        'role_id'=> $request->hak_akses,
-        'nip'=> $request->nip,
-        'name'=> $request->nama,
-        'birth_date'=> $request->birth_date,
-        'address'=> $request->alamat,
-        'phone' =>$request->telp,
-        'image' =>$request->foto,
-        'gender' =>$request->gender,
-        'religion' =>$request->agama,
-        'position' =>$request->position
+        'nama_pelajaran'=> $request->nama_pelajaran,
+        'nama_guru'=> $request->nama,
       ]);
       return redirect()->back();
     }
@@ -128,16 +118,9 @@ class MasterController extends Controller
 
     {
          DB::table('mata_pelajaran')->where('id',$request->id)->update([
-            'role_id'=> $request->hak_akses,
-            'nip'=> $request->nip,
-            'name'=> $request->nama,
-            'birth_date'=> $request->birth_date,
-            'address'=> $request->alamat,
-            'phone' =>$request->telp,
-            'image' =>$request->foto,
-            'gender' =>$request->gender,
-            'religion' =>$request->agama,
-            'position' =>$request->position
+            'nama_pelajaran'=> $request->nama_pelajaran,
+            'nama_guru'=> $request->nama,
+
          ]);
         return redirect()->back();
     }

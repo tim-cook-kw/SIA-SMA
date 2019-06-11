@@ -72,6 +72,11 @@
                                     <span class="nav-text">Kesiswaaan</span>
                                 </a>
                             </li>
+                            <li class="active">
+                                <a class="sidenav-item-link" href="{{url('master_parent')}}">
+                                    <span class="nav-text"> Parent </span>
+                                </a>
+                            </li>
                             <li>
                                 <a class="sidenav-item-link" href="{{url('master_mata_pelajaran')}}">
                                     <span class="nav-text">Mata Pelajaran</span>
