@@ -11,7 +11,7 @@
             <div class="col-sm-6">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb justify-content-sm-end">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Homee</a></li>
                     <li class="breadcrumb-item active" aria-current="page">Teacher</li>
                   </ol>
                 </nav>
@@ -23,7 +23,7 @@
 
 <!-- START SECTION TEACHER -->
 <section class="small_pt">
-	<div class="container">	
+	<div class="container">
         <div class="row justify-content-center">
         	<div class="col-lg-3 col-sm-6">
             	<div class="team_box team_style1 box_shadow1 animation" data-animation="fadeInUp" data-animation-delay="0.01s">
