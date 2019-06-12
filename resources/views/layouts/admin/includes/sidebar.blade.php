@@ -24,7 +24,7 @@
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Dashboard</span> <b class="caret"></b>
                     </a>
-                    <ul class="collapse show" id="dashboard" data-parent="#sidebar-menu">
+                    <ul class="collapse" id="dashboard" data-parent="#sidebar-menu">
                         <div class="sub-menu">
 
 
@@ -51,13 +51,13 @@
                         </div>
                     </ul>
                 </li>
-                <li class="has-sub">
+                <li class="has-sub active expand">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
                         data-target="#master_data" aria-expanded="false" aria-controls="master_data">
                         <i class="mdi mdi-view-dashboard-outline"></i>
                         <span class="nav-text">Master Data</span> <b class="caret"></b>
                     </a>
-                    <ul class="collapse show" id="master_data" data-parent="#sidebar-menu">
+                    <ul class="collapse " id="master_data" data-parent="#sidebar-menu">
                         <div class="sub-menu">
 
                             <li>
@@ -87,7 +87,7 @@
                         </div>
                     </ul>
                 </li>
-                <li class="has-sub">
+                <li class="has-sub active expand">
                     <a class="sidenav-item-link" href="javascript:void(0)" data-toggle="collapse"
                         data-target="#ui-elements" aria-expanded="false" aria-controls="ui-elements">
                         <i class="mdi mdi-folder-multiple-outline"></i>
