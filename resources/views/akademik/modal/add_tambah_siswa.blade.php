@@ -12,34 +12,27 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Nama</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="nama_siswa" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
+
                         <div class="form-group col-md-6">
                             <label for="inputPassword4">Nis</label>
-                            <input type="text" name="nisn" class="form-control" id="inputPassword4" placeholder="Nip">
+                            <input type="text" name="nis" class="form-control" id="inputPassword4" placeholder="Nip">
                         </div>
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="inputEmail4">Nama Kelas</label>
-                        <input type="text" name="kelas" class="form-control" id="inputEmail4" placeholder="Nama Kelas">
+                        <div class="form-group col-md-6">
+                                <label for="inputEmail4">Nama Kelas</label>
+                                <input type="text" name="class_name" class="form-control" id="inputEmail4" placeholder="Nama Kelas">
+                            </div>
                     </div>
 
                     <div class="form-group">
                         <label for="inputAddress2">Tahun Ajaran</label>
-                        <input type="text" name="birth_date" class="form-control" id="inputAddress2"
-                            placeholder="Bekasi 11-05-2001">
+                        <input type="text" name="tahun_ajaran" class="form-control" id="inputAddress2"
+                            placeholder="2001">
                     </div>
 
 
                         <div class="form-row">
-
-                            <div class="form-group col-md-4">
-                                <label for="inputState">Hak akses</label>
-                                <select name="hak_akses" id="inputState" class="form-control">
-                                    <option value="1" selected>Admin</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
 
                         </div>
 

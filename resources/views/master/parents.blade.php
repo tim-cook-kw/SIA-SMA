@@ -61,7 +61,7 @@
             <td>
                     <button data-toggle="modal" data-target="#update_parents" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
-                        <a href="master_parent/" class="delete" title="Delete" data-toggle="tooltip"><i
+                        <a href="master_parent/{{ $k->id }}" class="delete" title="Delete" data-toggle="tooltip"><i
                             class="material-icons">&#xE872;</i></a>
             </td>
         </tr>

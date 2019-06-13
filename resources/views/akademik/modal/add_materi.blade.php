@@ -12,20 +12,12 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Nama Guru/Pembimbing</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="namaguru" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Materi</label>
                             <input type="text" name="materi" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
-
-                            <div class="form-group col-md-4">
-                                <label for="inputState">Hak akses</label>
-                                <select name="hak_akses" id="inputState" class="form-control">
-                                    <option value="1" selected>Admin</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
 
                         </div>
 

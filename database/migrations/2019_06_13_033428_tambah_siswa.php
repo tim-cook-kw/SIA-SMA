@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Kelas extends Migration
+class TambahSiswa extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,11 @@ class Kelas extends Migration
      */
     public function up()
     {
-        Schema::create('kelas', function (Blueprint $table) {
+        Schema::create('tambah_siswa', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama_siswa');
-            $table->string('class_name');
-            $table->string('nama_guru');
+            $table->string('nis');
+            $table->string('nama_kelas');
             $table->string('tahun_ajaran');
 
         });

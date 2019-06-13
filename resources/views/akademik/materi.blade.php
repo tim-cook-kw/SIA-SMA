@@ -42,17 +42,19 @@
             </tr>
         </thead>
         <tbody>
+            @foreach($materi as $k)
             <tr>
                 <td>1</td>
-                <td>Sukriman</td>
-                <td>MTK</td>
+                <td>{{$k->nama_guru}}</td>
+                <td>{{$k->materi}}</td>
                 <td>
-                    <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i
+                    <a href="#update_materi" class="edit" title="Edit" data-toggle="modal"><i
                             class="material-icons">&#xE254;</i></a>
-                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
+                    <a href="akademik_materi/del/{{ $k->id }}" class="delete" title="Delete" data-toggle="tooltip"><i
                             class="material-icons">&#xE872;</i></a>
                 </td>
             </tr>
+            @endforeach
         </tbody>
     </table>
     <div class="clearfix">

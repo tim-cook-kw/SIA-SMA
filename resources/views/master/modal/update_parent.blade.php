@@ -7,7 +7,7 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <form action="{{ url('master_parent/update/') }}" method="POST">
+                <form action="master_parent/update/{{ $k->id }}" method="POST">
                     @csrf
                     <div class="form-row">
                         <div class="form-group col-md-6">

@@ -21,14 +21,6 @@
                                 <input type="text" name="materi" class="form-control" id="inputEmail4" placeholder="Nama">
                             </div>
 
-                            <div class="form-group col-md-4">
-                                <label for="inputState">Hak akses</label>
-                                <select name="hak_akses" id="inputState" class="form-control">
-                                    <option value="1" selected>Admin</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>

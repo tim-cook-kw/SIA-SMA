@@ -44,20 +44,22 @@
             </tr>
         </thead>
         <tbody>
+            @foreach ($kelola_kelas as $k)
             <tr>
                 <td>1</td>
                 <td>KLS0001</td>
-                <td>Budi</td>
-                <td>Tkj 3</td>
-                <td>Sudirman</td>
-                <td>2019/2020</td>
+                <td>{{ $k->nama_siswa }}</td>
+                <td>{{ $k->class_name }}</td>
+                <td>{{ $k->nama_guru }}</td>
+                <td>{{ $k->tahun_ajaran }}</td>
                 <td>
-                    <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i
-                            class="material-icons">&#xE254;</i></a>
-                    <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i
-                            class="material-icons">&#xE872;</i></a>
+                        <button data-toggle="modal" data-target="#update_kelola_kelas" class="edit" title="Edit"><i
+                            class="material-icons">&#xE254;</i></button>
+                            <a href="akademik_kelola_kelas/del/{{$k->id}}" class="delete" title="Delete"><i
+                                class="material-icons">&#xE872;</i></a>
                 </td>
             </tr>
+            @endforeach
         </tbody>
     </table>
     <div class="clearfix">
@@ -75,4 +77,5 @@
 </div>
 </div>
 @include('akademik.modal.add_kelola_kelas')
+@include('akademik.modal.update_kelola_kelas')
 @endsection

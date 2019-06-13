@@ -102,7 +102,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="{{url('materi')}}">
+                                <a class="sidenav-item-link" href="{{url('akademik_materi')}}">
                                     <span class="nav-text">Materi</span>
 
                                 </a>
@@ -116,11 +116,11 @@
                                     <div class="sub-menu">
 
                                         <li>
-                                            <a href="{{url('kelola_kelas')}}">Kelola kelas</a>
+                                            <a href="{{url('akademik_kelola_kelas')}}">Kelola kelas</a>
                                         </li>
 
                                         <li>
-                                            <a href="{{url('tambah_siswa')}}">Tambah Siswa</a>
+                                            <a href="{{url('akademik_tambah_siswa')}}">Tambah Siswa</a>
                                         </li>
                                     </div>
                                 </ul>
@@ -135,7 +135,7 @@
                                     <div class="sub-menu">
 
                                         <li>
-                                            <a href="{{url('kelola_nilai')}}">Kelola Nilai Siswa</a>
+                                            <a href="{{url('akademik_kelola_nilai')}}">Kelola Nilai Siswa</a>
                                         </li>
                                     </div>
                                 </ul>

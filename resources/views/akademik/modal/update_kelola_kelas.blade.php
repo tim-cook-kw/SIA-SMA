@@ -12,64 +12,25 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Nama siswa/siswi</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="nama_siswa" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group">
                             <label for="inputEmail4">Nama kelas</label>
-                            <input type="text" name="kelas" class="form-control" id="inputEmail4" placeholder="Kelas">
+                            <input type="text" name="class_name" class="form-control" id="inputEmail4" placeholder="Kelas">
                         </div>
                         <div class="form-group">
                             <label for="inputEmail4">Guru/Wali</label>
-                            <input type="text" name="kelas" class="form-control" id="inputEmail4" placeholder="Kelas">
+                            <input type="text" name="nama_guru" class="form-control" id="inputEmail4" placeholder="Kelas">
                         </div>
                     </div>
+
                     <div class="form-group">
-                        <label for="inputAddress">Alamat</label>
-                        <input type="text" name="alamat" class="form-control" id="inputAddress"
-                            placeholder="1234 Main St">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Tempat Tanggal Lahir</label>
-                        <input type="text" name="birth_date" class="form-control" id="inputAddress2"
-                            placeholder="Bekasi 11-05-2001">
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Jenis Kelamimn</label>
-                        <select name="gender" id="inputState" class="form-control">
-                            <option value="pria">laki-laki</option>
-                            <option value="perempuan">perempuan</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="inputAddress2">Agama</label>
-                        <select name="agama" id="inputState" class="form-control">
-                            <option value="1">islam</option>
-                            <option value="2">kristen</option>
-                            <option value="3">hindu</option>
-                            <option value="4">budha</option>
-                            <option value="5">konghu cu</option>
-                        </select>
-                        <div class="form-group">
-                            <label for="inputAddress2">Position</label>
-                            <input type="text" name="position" class="form-control" id="inputAddress2"
-                                placeholder="position">
-                        </div>
+                        <label for="inputAddress2">Tahun Ajaran</label>
+                        <input type="text" name="tahun_ajaran" class="form-control" id="inputAddress2"
+                            placeholder="2001">
+
                         <div class="form-row">
-                            <div class="form-group col-md-6">
-                                <label for="inputCity">Telp</label>
-                                <input type="text" name="telp" class="form-control" id="inputCity">
-                            </div>
-                            <div class="form-group col-md-4">
-                                <label for="inputState">Hak akses</label>
-                                <select name="hak_akses" id="inputState" class="form-control">
-                                    <option value="1" selected>Admin</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleFormControlFile1">Masukan Foto 3x4</label>
-                                <input type="file" name="foto" class="form-control-file" id="exampleFormControlFile1">
-                            </div>
+
                         </div>
 
                         <button type="submit" class="btn btn-primary">Submit</button>

@@ -42,18 +42,22 @@
                     </tr>
                 </thead>
                 <tbody>
+                        @foreach ($tambah_siswa as $k)
                     <tr>
                         <td>1</td>
                         <td>KLS0001</td>
-                        <td>Sudirman</td>
-
-                        <td>Tkj 3</td>
-                        <td>2019/2020</td>
+                        <td>{{ $k->nama_siswa }}</td>
+                        <td>{{ $k->nis }}</td>
+                        <td>{{ $k->nama_kelas }}</td>
+                        <td>{{ $k->tahun_ajaran }}</td>
                         <td>
-                            <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                <button data-toggle="modal" data-target="#update_tambah_siswa" class="edit" title="Edit"><i
+                                    class="material-icons">&#xE254;</i></button>
+                                    <a href="akademik_tambah_siswa/del/{{$k->id}}" class="delete" title="Delete"><i
+                                        class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
+                    @endforeach
                 </tbody>
             </table>
             <div class="clearfix">
