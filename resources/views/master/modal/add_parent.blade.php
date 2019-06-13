@@ -12,36 +12,41 @@
                     <div class="form-row">
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Nama Ayah</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="nama_ayah" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Nama Ibu</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="nama_ibu" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Agama Ayah</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="agama_ayah" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Agama Ibu</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="agama_ibu" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Pendidikan Terakhir Ayah</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="pendidikan_terakhir_ayah" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Pendidikan Terakhir Ibu</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="pendidikan_terakhir_ibu" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Pekerjaan Ayah</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="pekerjaan_ayah" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputEmail4">Pekerjaan Ibu</label>
-                            <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
+                            <input type="text" name="pekerjaan_ibu" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
+                        <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="text" name="email" class="form-control" id="inputEmail4" placeholder="Nama">
+                            </div>
+
 
                     </div>
 

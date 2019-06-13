@@ -6,6 +6,7 @@
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
+            
             <div class="modal-body">
                 <form action="{{ url('master_kepegaiawan/add/') }}" method="POST">
                     @csrf

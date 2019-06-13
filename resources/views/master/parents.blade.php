@@ -43,28 +43,34 @@
             <th>Pendidikan Terakhir Ibu</th>
             <th>Pekerjaan Ayah</th>
             <th>Pekerjaan Ibu</th>
+            <th>Email</th>
 
             <th>Actions</th>
         </tr>
     </thead>
     <tbody>
+        @foreach ($parent as $k)
         <tr>
+
             <td>1</td>
-            <td>budi</td>
-            <td>juminah</td>
-            <td>islam</td>
-            <td>islam</td>
-            <td>SMA</td>
-            <td>SMA</td>
-            <td>Boss</td>
-            <td>Boss</td>
+            <td>{{ $k->name_father }}</td>
+            <td>{{ $k->name_mother }}</td>
+            <td>{{ $k->religion_father }}</td>
+            <td>{{ $k->religion_mother }}</td>
+            <td>{{ $k->last_education_father }}</td>
+            <td>{{ $k->last_education_mother }}</td>
+            <td>{{ $k->job_father }}</td>
+            <td>{{ $k->job_mother }}</td>
+            <td>{{ $k->email }}</td>
+
             <td>
                     <button data-toggle="modal" data-target="#update_parents" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
-                        <a href="master_parent/{{ $k->id }}" class="delete" title="Delete" data-toggle="tooltip"><i
+                        <a href="master_parent/del{{ $k->id }}" class="delete" title="Delete" data-toggle="tooltip"><i
                             class="material-icons">&#xE872;</i></a>
             </td>
         </tr>
+        @endforeach
     </tbody>
 </table>
 <div class="clearfix">

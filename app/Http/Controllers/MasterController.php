@@ -125,5 +125,46 @@ class MasterController extends Controller
         return redirect()->back();
     }
 
+    public function parent(Request $request)
+    {
+        $random = str_random(8);
+
+      DB::table('parents')->insert([
+        'number_of_children'=> $request->number_of_children,
+        'name_father'=> $request->name_father,
+        'name_mother'=> $request->name_mother,
+        'job_father'=> $request->job_father,
+        'job_mother'=> $request->job_mother,
+        'religion_father'=> $request->religion_father,
+        'religion_mother'=> $request->religion_mother,
+        'last_education_father'=> $request->last_education_father,
+        'last_education_mother'=> $request->last_education_mother,
+        'email'=> $request->email,
+        'password'=> $random,
+      ]);
+      return redirect()->back();
+    }
+    public function get_parent()
+    {
+        $parent = DB::table('parents')->get();
+        return view('master.parents',compact('parent'));
+    }
+    public function hapus_parent($id)
+    {
+       $db = DB::table('parents')->where('id',$id);
+       $db->delete();
+       return redirect()->back();
+    }
+    public function update_parent(Request $request)
+
+    {
+         DB::table('parents')->where('id',$request->id)->update([
+            'nama_pelajaran'=> $request->nama_pelajaran,
+            'nama_guru'=> $request->nama,
+
+         ]);
+        return redirect()->back();
+    }
+
 }
 

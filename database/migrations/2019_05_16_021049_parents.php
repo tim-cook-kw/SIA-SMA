@@ -15,7 +15,6 @@ class Parents extends Migration
     {
         Schema::create('parents', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('number_of_children');
             $table->string('name_father');
             $table->string('name_mother');
             $table->string('job_father');
@@ -24,7 +23,7 @@ class Parents extends Migration
             $table->integer('religion_mother');
             $table->string('last_education_father');
             $table->string('last_education_mother');
-            $table->string('username');
+            $table->string('email');
             $table->string('password');
 
         });

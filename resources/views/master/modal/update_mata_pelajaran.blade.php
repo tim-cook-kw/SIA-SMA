@@ -7,7 +7,9 @@
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
+                    @foreach($mata_pelajaran as $k)
                 <form action="master_mata_pelajaran/update/{{ $k->id }}" method="POST">
+                    @endforeach
                     @csrf
 
                     <div class="form-row">

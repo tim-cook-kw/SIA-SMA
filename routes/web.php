@@ -100,14 +100,10 @@ Route::post('/akademik_tambah_siswa/add','AkademikController@tambah_siswa');
 Route::get('/akademik_tambah_siswa/del/{id}','AkademikController@hapus_tambah_siswa');
 Route::post('/akademik_tambah_siswa/update/','AkademikController@update_tambah_siswa');
 
-
-
-
-
-
-Route::get('/master_parent',function(){
-    return view('master.parents');
-});
+Route::get('/master_parent','MasterController@get_parent');
+Route::post('/master_parent/add','MasterController@parent');
+Route::get('/master_parent/del/{id}','MasterController@hapus_parent');
+Route::post('/master_parent/update/','MasterController@update_parent');
 
 
 
