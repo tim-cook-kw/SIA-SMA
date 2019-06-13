@@ -117,3 +117,15 @@ Route::get('/news',function(){
     return view('dashboard.news');
 });
 
+Route::get('/dashboard/news',function(){
+    return view('news');
+});
+Route::get('/dashboard/teacher',function(){
+    return view('teacher');
+});
+Route::get('/dashboard/contact_us',function(){
+    return view('contact');
+});
+Route::get('/dashboard/about',function(){
+    return view('about_us');
+});

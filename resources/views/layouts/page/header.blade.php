@@ -139,7 +139,7 @@
     </div>
     <div class="container">
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="/">
                 <img class="logo_light" src="{{asset('template/images/logo_white.png')}}" alt="logo" />
                 <img class="gambar1" src="{{asset('template/images/Tempatgambar/gambar1.png')}}" height="100" width="120" alt="logo" />
                 <img class="logo_default" src="{{asset('template/images/logo_dark.png')}}" alt="logo" />
@@ -153,73 +153,47 @@
                         <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Dashboard</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a class="dropdown-item nav-link nav_item" href="index.html">Profile Sekolah</a>
+                                <li><a class="dropdown-item nav-link nav_item" href="/dashboard/news">News</a>
                                 </li>
-                                <li><a class="dropdown-item nav-link nav_item" href="index-2.html">Fasilitas Sekolah</a>
-                                </li>
-                                <li><a class="dropdown-item nav-link nav_item active" href="index-3.html"></a></li>
+                                <li><a class="dropdown-item nav-link nav_item active" href=""></a></li>
                             </ul>
                         </div>
                     </li>
-                    <ul class="navbar-nav">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kesiswaan</a>
+                    <li class="dropdown">
+                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Profile</a>
                             <div class="dropdown-menu">
                                 <ul>
-                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">data alumni</a></li>
-                                    <li><a class="dropdown-item nav-link nav_item"
-                                            href="index-2.html">data siswa</a></li>
-
+                                    <li><a class="dropdown-item nav-link nav_item" href="blog.html">Profile Sekolah</a></li>
                                 </ul>
                             </div>
-                        </li><ul class="navbar-nav">
+                        </li>
+
+                        <ul class="navbar-nav">
                         <li class="dropdown">
-                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Tenaga Pendidikan</a>
+                            <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Kepegawaian</a>
                             <div class="dropdown-menu">
                                 <ul>
-                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">Kepala Sekolah</a></li>
-                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">Komite Sekolah</a></li>
-                                    <li><a class="dropdown-item nav-link nav_item" href="index.html">Data Guru</a></li>
-                                    <li><a class="dropdown-item nav-link nav_item"
-                                            href="index-2.html">Struktur Organisasi Sekolah</a></li>
+
+                                    <li><a class="dropdown-item nav-link nav_item" href="/dashboard/teacher">Data Guru</a></li>
+
 
                                 </ul>
                             </div>
                         </li>
                         <ul class="navbar-nav">
                             <li class="dropdown">
-                            
+
                                 <div class="dropdown-menu">
-                                    
+
 
                                         </li>
                                     </ul>
                                 </div>
-                                
-                            <ul class="navbar-nav">
-                                <li class="dropdown">
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li><a class="dropdown-item nav-link nav_item" href="about.html">About
-                                                    Us</a>
-                                            <li><a class="dropdown-item nav-link nav_item" href="faq.html">Faq</a></li>
-                                            <li><a class="dropdown-item nav-link nav_item" href="404.html">404 Page</a>
-                                            </li>
 
-                                </li>
-                            </ul>
-            </div>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Akademik Sekolah</a>
-                <div class="dropdown-menu">
-                    <ul>
-                        <li><a class="dropdown-item nav-link nav_item" href="courses.html">E-Learning</a></li>
-                        <li><a class="dropdown-item nav-link nav_item" href="course-detail.html">Info Penerimaan Siswa Baru</a></li>
-                    </ul>
-                </div>
+                            <ul class="navbar-nav">
+
                 <li class="dropdown">
-                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">ExtraKulikuler</a>
+                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Program</a>
                 <div class="dropdown-menu">
                     <ul>
                         <li><a class="dropdown-item nav-link nav_item" href="blog.html">Drum Band</a></li>
@@ -231,38 +205,18 @@
                     </ul>
                 </div>
             </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Teacher</a>
-                <div class="dropdown-menu">
-                    <ul>
-                        <li><a class="dropdown-item nav-link nav_item" href="teacher.html">Teacher</a></li>
-                        <li><a class="dropdown-item nav-link nav_item" href="teacher-detail.html">Teacher Detail</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-            <li class="dropdown">
-                <a class="dropdown-toggle nav-link" href="#" data-toggle="dropdown">Blog</a>
-                <div class="dropdown-menu">
-                    <ul>
-                        <li><a class="dropdown-item nav-link nav_item" href="blog.html">Blog</a></li>
-                        <li><a class="dropdown-item nav-link nav_item" href="blog-detail.html">Blog Detail</a></li>
-                    </ul>
-                </div>
-            </li>
+
+
             <li>
-                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-link" href="/dashboard/contact_us">Contact</a>
             </li>
+
+            <li>
+                    <a class="nav-link" href="/dashboard/about">About Us</a>
+                </li>
             </ul>
     </div>
-    <div class="container">
-    <div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Search">
-  <div class="input-group-append">
-    <button class="btn btn-success" type="submit">Go</button>
-  </div>
-</div>
-</div>
+
     </nav>
     </div>
 </header>
