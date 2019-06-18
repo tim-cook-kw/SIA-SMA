@@ -34,11 +34,13 @@ Route::prefix('admin')->group(function () {
     })->name('admin.dashboard');
     // Route::resource('user', 'Admin\UserController');
     Route::resource('role', 'Admin\RoleController');
+    Route::resource('class', 'Admin\ClassController');
 });
 
 Route::prefix('datatable')->group(function () {
     // Route::get('user-datatable', 'DataTable\UserDataTableController@index')->name('datatable.users');
     Route::get('role-datatable', 'DataTable\RoleDataTableController@index')->name('datatable.role');
+    Route::get('class-datatable', 'DataTable\ClassDataTableController@index')->name('datatable.class');
 });
 
 Route::get('/blog_details', function () {

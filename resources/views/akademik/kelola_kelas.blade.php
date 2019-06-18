@@ -36,7 +36,6 @@
             <tr>
                 <th>No</th>
                 <th>Kode Kelas<i class="fa fa-sort"></i></th>
-                <th>Nama siswa/siswi<i class="fa fa-sort"></i></th>
                 <th>Nama kelas<i class="fa fa-sort"></i></th>
                 <th>Guru/Wali kelas <i class="fa fa-sort"></i></th>
                 <th>Tahun ajaran</th>
@@ -48,7 +47,6 @@
             <tr>
                 <td>1</td>
                 <td>KLS0001</td>
-                <td>{{ $k->nama_siswa }}</td>
                 <td>{{ $k->class_name }}</td>
                 <td>{{ $k->nama_guru }}</td>
                 <td>{{ $k->tahun_ajaran }}</td>
