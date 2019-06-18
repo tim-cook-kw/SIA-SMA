@@ -69,7 +69,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="carousel-nav">
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
                 <i class="ion-chevron-left"></i>
@@ -223,7 +223,7 @@
             </div>
         </div>
     </div>
-</section> 
+</section>
 <!-- END SECTION FEATURE -->
 
 <!-- START SECTION ABOUT -->
@@ -233,7 +233,7 @@
         	<div class="col-md-6">
             	<div class="bg_gray h-100 padding_eight_all">
                 	<div class="animation" data-animation="fadeInLeft" data-animation-delay="0.02s">
-                        <div class="heading_s1"> 
+                        <div class="heading_s1">
                           <h2>About Us</h2>
                         </div>
                         <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary</p>
@@ -258,7 +258,7 @@
             </div>
         	<div class="col-md-6">
             	<div class="animation" data-animation="fadeInRight" data-animation-delay="0.03s">
-                	<div class="overlay_bg_30 about_img z_index_minus1">	
+                	<div class="overlay_bg_30 about_img z_index_minus1">
                     	<img class="w-100" src="{{asset('template/images/about_img.jpg')}}" alt="about_img"/>
                     </div>
                 	<a href="https://www.youtube.com/watch?v=884hjNQ_DYw" class="video_popup video_play">
@@ -369,7 +369,7 @@
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
-                                <i class="ion-android-star-half"></i> 
+                                <i class="ion-android-star-half"></i>
                             </div>
                             <ul class="list_none content_meta">
                                 <li><a href="#" ><i class="ti-user"></i>31</a></li>
@@ -401,7 +401,7 @@
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
-                                <i class="ion-android-star-half"></i> 
+                                <i class="ion-android-star-half"></i>
                             </div>
                             <ul class="list_none content_meta">
                                 <li><a href="#" ><i class="ti-user"></i>31</a></li>
@@ -433,7 +433,7 @@
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
-                                <i class="ion-android-star-half"></i> 
+                                <i class="ion-android-star-half"></i>
                             </div>
                             <ul class="list_none content_meta">
                                 <li><a href="#" ><i class="ti-user"></i>31</a></li>
@@ -465,7 +465,7 @@
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
-                                <i class="ion-android-star-half"></i> 
+                                <i class="ion-android-star-half"></i>
                             </div>
                             <ul class="list_none content_meta">
                                 <li><a href="#" ><i class="ti-user"></i>31</a></li>
@@ -497,7 +497,7 @@
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
-                                <i class="ion-android-star-half"></i> 
+                                <i class="ion-android-star-half"></i>
                             </div>
                             <ul class="list_none content_meta">
                                 <li><a href="#" ><i class="ti-user"></i>31</a></li>
@@ -529,7 +529,7 @@
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
                                 <i class="ion-android-star"></i>
-                                <i class="ion-android-star-half"></i> 
+                                <i class="ion-android-star-half"></i>
                             </div>
                             <ul class="list_none content_meta">
                                 <li><a href="#" ><i class="ti-user"></i>31</a></li>
@@ -654,7 +654,7 @@
                                     <h5><span>27</span> Apr</h5>
                                     <span class="event_time bg_default">9:00 am 4:00 pm</span>
                                 </div>
-                            <div class="content_desc bg-white">	
+                            <div class="content_desc bg-white">
                                 <h4 class="content_title"><a href="#">Nullam id varius nunc id varius nunc</a></h4>
                                 <ul class="list_none content_meta">
                                     <li><i class="ti-user"></i> <a href="#" class="text_default">John Wood</a></li>
@@ -691,7 +691,7 @@
                                 <p>If you are going to use a passage of Lorem Ipsum you need to be sure anything embarrassing hidden in the middle of text.</p>
                             </div>
                         </div>
-                    </div>    
+                    </div>
                 </div>
             </div>
         </div>
@@ -699,7 +699,7 @@
 </section> -->
 <!-- START SECTION EVENT -->
 
-<!-- START SECTION INQUIRY -->
+{{-- <!-- START SECTION INQUIRY -->
 <section class="pb-0 background_bg bg_blue_dark" data-img-src="{{asset('template/images/pattern_bg.png')}}">
 	<div class="container">
     	<div class="row align-items-end">
@@ -753,11 +753,11 @@
         </div>
     </div>
 </section>
-<!-- END SECTION INQUIRY -->
+<!-- END SECTION INQUIRY --> --}}
 
 <!-- START SECTION TEACHER -->
 <section class="bg_gray">
-	<div class="container">	
+	<div class="container">
     	<div class="row">
         	<div class="col-12">
             	<div class="heading_s1 text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
@@ -774,12 +774,7 @@
                     <div class="team_title text-center">
                         <h5><a href="#">Aden Smith</a></h5>
                         <span>Head Of Department</span>
-                        <ul class="list_none social_icons">
-                            <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
-                            <li><a href="#" class="sc_gplus"><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href="#" class="sc_instagram"><i class="ion-social-instagram-outline"></i></a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -791,12 +786,7 @@
                     <div class="team_title text-center">
                         <h5><a href="#">Kally Brooks</a></h5>
                         <span>Professor</span>
-                        <ul class="list_none social_icons">
-                            <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
-                            <li><a href="#" class="sc_gplus"><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href="#" class="sc_instagram"><i class="ion-social-instagram-outline"></i></a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -808,12 +798,7 @@
                     <div class="team_title text-center">
                         <h5><a href="#">David clark</a></h5>
                         <span>Chemistry Teacher</span>
-                        <ul class="list_none social_icons">
-                            <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
-                            <li><a href="#" class="sc_gplus"><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href="#" class="sc_instagram"><i class="ion-social-instagram-outline"></i></a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -825,12 +810,7 @@
                     <div class="team_title text-center">
                         <h5><a href="#">Rebeka Alig</a></h5>
                         <span>English Teacher</span>
-                        <ul class="list_none social_icons">
-                            <li><a href="#" class="sc_facebook"><i class="ion-social-facebook"></i></a></li>
-                            <li><a href="#" class="sc_twitter"><i class="ion-social-twitter"></i></a></li>
-                            <li><a href="#" class="sc_gplus"><i class="ion-social-googleplus"></i></a></li>
-                            <li><a href="#" class="sc_instagram"><i class="ion-social-instagram-outline"></i></a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
@@ -838,71 +818,9 @@
     </div>
 </section>
 <!-- END SECTION TEACHER -->
- 
+
  <!-- START SECTION TESTIMONIAL -->
-<section class="background_bg bg_fixed" data-img-src="{{asset('template/images/pattern_bg3.png')}}">
-	<div class="container">
-    	<div class="row justify-content-center">
-        	<div class="col-xl-6 col-lg-8">
-            	<div class="text-center animation" data-animation="fadeInUp" data-animation-delay="0.01s">
-                    <div class="heading_s1 text-center">
-                        <h2>Student Say!</h2>
-                    </div>
-                    <p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text</p>
-                    <div class="small_divider"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-        	<div class="col-12 animation" data-animation="fadeInUp" data-animation-delay="0.02s">
-            	<div class="testimonial_slider testimonial_style2 carousel_slide3 owl-carousel owl-theme" data-margin="30" data-loop="true" data-autoplay="true" data-dots="false">
-                    <div class="testimonial_box">
-                        <div class="testimonial_img">
-                            <img src="{{asset('template/images/client_img1.jpg')}}" alt="client">
-                        </div>
-                        <div class="testi_meta">
-                        	<div class="testi_user">
-                            	<h6>Lissa Castro</h6>
-                            	<span class="text_default">Co-Founder</span>
-                            </div>
-                            <div class="testi_desc">
-                            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial_box">
-                        <div class="testimonial_img">
-                            <img src="{{asset('template/images/client_img2.jpg')}}" alt="client">
-                        </div>
-                        <div class="testi_meta">
-                        	<div class="testi_user">
-                            	<h6>Lissa Castro</h6>
-                            	<span class="text_default">Co-Founder</span>
-                            </div>
-                            <div class="testi_desc">
-                            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial_box">
-                        <div class="testimonial_img">
-                            <img src="{{asset('template/images/client_img3.jpg')}}" alt="client">
-                        </div>
-                        <div class="testi_meta">
-                        	<div class="testi_user">
-                            	<h6>Lissa Castro</h6>
-                            	<span class="text_default">Co-Founder</span>
-                            </div>
-                            <div class="testi_desc">
-                            	<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, quaeillo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <!-- END SECTION TESTIMONIAL -->
 
 <!-- START SECTION BLOG -->

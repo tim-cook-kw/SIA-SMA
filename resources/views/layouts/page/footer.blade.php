@@ -1,25 +1,4 @@
-
-<section class="bg_default small_pt small_pb">
-	<div class="container">
-    	<div class="row align-items-center">
-        	<div class="col-md-8">
-            	<div class="text_white cta_section">
-                	<div class="medium_divider d-block d-md-none"></div>
-                    <div class="heading_s1 heading_light">
-                        <h2>Get The Coaching Training Today!</h2>
-                    </div>
-                    <p>If you are going to use a passage of embarrassing hidden in the middle of text</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-            	<div class="text-md-right">
-                    <a href="#" class="btn btn-outline-white">Get Started</a>
-                </div>
-                <div class="medium_divider d-block d-md-none"></div>
-            </div>
-        </div>
-    </div>
-</section><footer class="bg_blue_dark footer_dark">
+<footer class="bg_blue_dark footer_dark">
 	<div class="top_footer">
         <div class="container">
             <div class="row">
@@ -96,7 +75,7 @@
                     <h6 class="widget_title">Subscribe Newsletter</h6>
                     <p>Contrary to popular belief of lorem Ipsm Latin amet ltin from consectetur industry.</p>
                     <div class="newsletter_form form_style2 mb-4">
-                        <form> 
+                        <form>
                             <input type="text" class="form-control" required="" placeholder="Email Address">
                             <button type="submit" title="Subscribe" class="btn btn-default btn-sm rounded-0" name="submit" value="Submit">Subscribe</button>
                         </form>
@@ -131,4 +110,4 @@
 </footer>
 <!-- END FOOTER -->
 
-<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a> 
+<a href="#" class="scrollup" style="display: none;"><i class="ion-ios-arrow-up"></i></a>

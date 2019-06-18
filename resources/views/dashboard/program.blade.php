@@ -1,228 +1,76 @@
 @extends('layouts.admin.master')
 @section('content')
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="https://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-
-
-<div class="container">
-<div class="show-entries">
-							<span>Show</span>
-							<select>
-								<option>5</option>
-								<option>10</option>
-								<option>15</option>
-								<option>20</option>
-							</select>
-							<span>entries</span>
-						</div>
-            </div>
-
-<div class="container">
-    <div class="row">
-
-
-        <div class="col-md-12">
-            <h4>Program Extrakulikuler | <button type="submit" class='btn btn-success mb-1 btn-sm'> Tambah </button></h4>
-            <div class="table-responsive">
-
-
-                <table id="mytable" class="table table-bordred table-striped">
-
-                    <thead>
-
-                        <th><input type="checkbox" id="checkall" /></th>
-                        <th>Sales ID</th>
-                        <th>Name</th>
-                        <th>Designation</th>
-                        <th>Email</th>
-                        <th>Mobile Numberl</th>
-                        <th>Update</th>
-                        <th>  Delete </th>
-                    </thead>
-                    <tbody>
-
-                        <tr>
-                            <td><input type="checkbox" class="checkthis" /></td>
-                            <td>Mohsin</td>
-                            <td>Irshad</td>
-                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                            <td>isometric.mohsin@gmail.com</td>
-                            <td>+923335586757</td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Edit"><button
-                                        class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                        data-target="#edit"><span class="fas fa-user-plus"></span></button></p>
-                            </td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Delete"><button
-                                        class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
-                                        data-target="#delete"><span class="fas fa-trash"></span></button></p>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td><input type="checkbox" class="checkthis" /></td>
-                            <td>Mohsin</td>
-                            <td>Irshad</td>
-                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                            <td>isometric.mohsin@gmail.com</td>
-                            <td>+923335586757</td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Edit"><button
-                                        class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                        data-target="#edit"><span class="fas fa-user-plus"></span></button></p>
-                            </td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Delete"><button
-                                        class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
-                                        data-target="#delete"><span class="fas fa-trash"></span></button></p>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td><input type="checkbox" class="checkthis" /></td>
-                            <td>Mohsin</td>
-                            <td>Irshad</td>
-                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                            <td>isometric.mohsin@gmail.com</td>
-                            <td>+923335586757</td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Edit"><button
-                                        class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                        data-target="#edit"><span class="fas fa-user-plus"></span></button></p>
-                            </td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Delete"><button
-                                        class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
-                                        data-target="#delete"><span class="fas fa-trash"></span></button></p>
-                            </td>
-                        </tr>
-
-
-
-                        <tr>
-                            <td><input type="checkbox" class="checkthis" /></td>
-                            <td>Mohsin</td>
-                            <td>Irshad</td>
-                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                            <td>isometric.mohsin@gmail.com</td>
-                            <td>+923335586757</td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Edit"><button
-                                        class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                        data-target="#edit"><span class="fas fa-user-plus"></span></button></p>
-                            </td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Delete"><button
-                                        class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
-                                        data-target="#delete"><span class="fas fa-trash"></span></button></p>
-                            </td>
-                        </tr>
-
-
-                        <tr>
-                            <td><input type="checkbox" class="checkthis" /></td>
-                            <td>Mohsin</td>
-                            <td>Irshad</td>
-                            <td>CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan</td>
-                            <td>isometric.mohsin@gmail.com</td>
-                            <td>+923335586757</td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Edit"><button
-                                        class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal"
-                                        data-target="#edit"><span class="fas fa-user-plus"></span></button></p>
-                            </td>
-                            <td>
-                                <p data-placement="top" data-toggle="tooltip" title="Delete"><button
-                                        class="btn btn-danger btn-xs" data-title="Delete" data-toggle="modal"
-                                        data-target="#delete"><span class="fas fa-trash"></span></button></p>
-                            </td>
-                        </tr>
-
-
-
-
-
-                    </tbody>
-
-                </table>
-        </div>
-    </div>
-</div>
-
-
-<div class="modal fade" id="edit" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
-                        class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                <h4 class="modal-title custom_align" id="Heading">Edit Your Detail</h4>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <input class="form-control " type="text" placeholder="Mohsin">
+<div class="table-wrapper">
+    <div class="table-title">
+        <div class="pull-right">
+            <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#tmbh_kesiswaan"><i
+                    class="glyphicon glyphicon-plus"></i> New</button>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="show-entries">
+                        <span>Show</span>
+                        <select>
+                            <option>5</option>
+                            <option>10</option>
+                            <option>15</option>
+                            <option>20</option>
+                        </select>
+                        <span>entries</span>
+                    </div>
                 </div>
-                <div class="form-group">
-
-                    <input class="form-control " type="text" placeholder="Irshad">
+                <div class="col-sm-4">
+                    <h2 class="text-center">Programs</h2>
                 </div>
-                <div class="form-group">
-                    <textarea rows="2" class="form-control"
-                        placeholder="CB 106/107 Street # 11 Wah Cantt Islamabad Pakistan"></textarea>
-
-
+                <div class="col-sm-4">
+                    <div class="search-box">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+                            <input type="text" class="form-control" placeholder="Search&hellip;">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="modal-footer ">
-                <button type="button" class="btn btn-warning btn-lg" style="width: 100%;"><span
-                        class="far fa-trash-alt"></span> Update</button>
-            </div>
         </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Nama Extrakulikuler <i class="fa fa-sort"></i></th>
+            <th>Description</th>
+            <th>Foto  </th>
 
-
-
-<div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="edit" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span
-                        class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>
-                <h4 class="modal-title custom_align" id="Heading">Delete this entry</h4>
-            </div>
-            <div class="modal-body">
-
-                <div class="alert alert-danger"><span class="glyphicon glyphicon-warning-sign"></span> Are you sure you
-                    want to delete this Record?</div>
-
-            </div>
-            <div class="modal-footer ">
-                <button type="button" class="btn btn-success"><span
-                        class="glyphicon glyphicon-ok-sign"></span> Yes</button>
-                <button type="button" class="btn btn-default" data-dismiss="modal"><span
-                        class="glyphicon glyphicon-remove"></span> No</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Pramuka</td>
+            <td>Pramuka adalah suatau gerakan gerakan </td>
+            <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
+                height="60"> </td>
+            <td>
+                    <button data-toggle="modal" data-target="#update_kesiswaan" class="edit" title="Edit"><i
+                        class="material-icons">&#xE254;</i></button>
+                        <a href="master_kesiswaan/" class="delete" title="Delete" data-toggle="tooltip"><i
+                            class="material-icons">&#xE872;</i></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
 <div class="clearfix">
-                <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">5</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
-            </div>
+    <div class="hint-text">Showing <b>5</b> out of <b>25</b> entries</div>
+    <ul class="pagination">
+        <li class="page-item disabled"><a href="#">Previous</a></li>
+        <li class="page-item"><a href="#" class="page-link">1</a></li>
+        <li class="page-item"><a href="#" class="page-link">2</a></li>
+        <li class="page-item active"><a href="#" class="page-link">3</a></li>
+        <li class="page-item"><a href="#" class="page-link">4</a></li>
+        <li class="page-item"><a href="#" class="page-link">5</a></li>
+        <li class="page-item"><a href="#" class="page-link">Next</a></li>
+    </ul>
+</div>
+</div>
+</div>
 
 @endsection
