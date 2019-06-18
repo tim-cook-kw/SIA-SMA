@@ -20,12 +20,19 @@
                     @endif
                 </select>
             </div>
+            @elseif($input['type'] == 'year')
+            <div class="form-group">
+                <label for="{{ $input['name'] }}" class="col-form-label"
+                    id="{{ $input['label_id'] }}">{{ $input['header'] }}</label>
+                <input data-date-format="yyyy" class="form-control" id="{{ $input['name'] }}"
+                    name="{{ $input['name'] }}" value="{{ old($input['name']) }}">
+            </div>
             @else
             <div class="form-group">
                 <label for="{{ $input['name'] }}" class="col-form-label"
                     id="{{ $input['label_id'] }}">{{ $input['header'] }}</label>
                 <input type="{{ $input['type'] }}" class="form-control" id="{{ $input['name'] }}"
-                    name="{{ $input['name'] }}" value="{{ old($input['name']) }}" placeholder="{{ $input['name'] }}">
+                    name="{{ $input['name'] }}" value="{{ old($input['name']) }}" placeholder="{{ $input['header'] }}">
             </div>
             @endif
             @endforeach
