@@ -25,7 +25,14 @@
                 <label for="{{ $input['name'] }}" class="col-form-label"
                     id="{{ $input['label_id'] }}">{{ $input['header'] }}</label>
                 <input data-date-format="yyyy" class="form-control" id="{{ $input['name'] }}"
-                    name="{{ $input['name'] }}" value="{{ old($input['name']) }}">
+                    name="{{ $input['name'] }}" value="{{ old($input['name']) }}" placeholder="{{ $input['header'] }}">
+            </div>
+            @elseif($input['type'] == 'date')
+            <div class="form-group">
+                <label for="{{ $input['name'] }}" class="col-form-label"
+                    id="{{ $input['label_id'] }}">{{ $input['header'] }}</label>
+                <input data-date-format="dd/mm/yyyy" class="form-control" id="{{ $input['name'] }}"
+                    name="{{ $input['name'] }}" value="{{ old($input['name']) }}" placeholder="{{ $input['header'] }}">
             </div>
             @else
             <div class="form-group">
