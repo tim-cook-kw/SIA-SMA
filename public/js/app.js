@@ -40140,7 +40140,7 @@ x();"bottom"===a.start?(c.css({top:b.outerHeight()-c.outerHeight()}),n(0,!0)):"t
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
-* sweetalert2 v8.11.4
+* sweetalert2 v8.12.1
 * Released under the MIT License.
 */
 (function (global, factory) {
@@ -41821,7 +41821,8 @@ var lockBodyScroll = function lockBodyScroll() {
   var preventTouchMove;
 
   container.ontouchstart = function (e) {
-    preventTouchMove = e.target === container || !isScrollable(container);
+    preventTouchMove = e.target === container || !isScrollable(container) && e.target.tagName !== 'INPUT' // #1603
+    ;
   };
 
   container.ontouchmove = function (e) {
@@ -41959,14 +41960,6 @@ function removeBodyClasses() {
 }
 
 function swalCloseEventFinished(popup, container, isToast, onAfterClose) {
-  // TODO(@limonte): for some reason swalCloseEventFinished is triggered twice sometimes
-  // avoid double-executing
-  if (!globalState.keydownTarget) {
-    return;
-  }
-
-  popup.removeEventListener(animationEndEvent, swalCloseEventFinished);
-
   if (hasClass(popup, swalClasses.hide)) {
     removePopupAndResetState(container, isToast, onAfterClose);
   } // Unset WeakMaps so GC will be able to dispose them (#1569)
@@ -41992,7 +41985,11 @@ function close(resolveValue) {
   addClass(popup, swalClasses.hide); // If animation is supported, animate
 
   if (animationEndEvent && hasCssAnimation(popup)) {
-    popup.addEventListener(animationEndEvent, swalCloseEventFinished.bind(null, popup, container, isToast(), onAfterClose));
+    popup.addEventListener(animationEndEvent, function (e) {
+      if (e.target === popup) {
+        swalCloseEventFinished(popup, container, isToast(), onAfterClose);
+      }
+    });
   } else {
     // Otherwise, remove immediately
     removePopupAndResetState(container, isToast(), onAfterClose);
@@ -42922,7 +42919,7 @@ Object.keys(instanceMethods).forEach(function (key) {
   };
 });
 SweetAlert.DismissReason = DismissReason;
-SweetAlert.version = '8.11.4';
+SweetAlert.version = '8.12.1';
 
 var Swal = SweetAlert;
 Swal["default"] = Swal;
@@ -42930,7 +42927,7 @@ Swal["default"] = Swal;
 return Swal;
 
 })));
-if (typeof window !== 'undefined' && window.Sweetalert2){  window.swal = window.sweetAlert = window.Swal = window.SweetAlert = window.Sweetalert2}
+if (typeof this !== 'undefined' && this.Sweetalert2){  this.swal = this.sweetAlert = this.Swal = this.SweetAlert = this.Sweetalert2}
 
 
 /***/ }),
@@ -43079,8 +43076,8 @@ window.Swal = __webpack_require__(/*! sweetalert2/dist/sweetalert2 */ "./node_mo
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/sultan/Master/myproject/laravel/sistem_akademik/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/sultan/Master/myproject/laravel/sistem_akademik/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\sultan\SIA-SMA\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\sultan\SIA-SMA\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

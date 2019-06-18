@@ -86,7 +86,7 @@ class AkademikController extends Controller
     public function kelola_kelas(Request $request)
     {
       DB::table('kelas')->insert([
-        'nama_siswa'=> $request->nama_siswa,
+        'code_class'=> $request->code_class,
         'class_name'=> $request->class_name,
         'nama_guru'=> $request->nama_guru,
         'tahun_ajaran'=> $request->tahun_ajaran,
@@ -109,7 +109,7 @@ class AkademikController extends Controller
 
     {
          DB::table('kelas')->where('id',$request->id)->update([
-            'nama_siswa'=> $request->namasiswa,
+            'code_class'=> $request->code_class,
             'class_name'=> $request->classname,
             'nama_guru'=> $request->namaguru,
             'tahun_ajaran'=> $request->tahunajaran,
