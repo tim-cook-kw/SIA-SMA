@@ -22,14 +22,14 @@ class CreateUsersTable extends Migration
             // $table->rememberToken();
             // $table->timestamps();
             $table->bigIncrements('id');
-            $table->integer('id_parent');
-            $table->integer('id_class');
+            $table->integer('id_parent')->nullable(); //murid
+            $table->integer('id_class')->nullable(); //class
             $table->unsignedBigInteger('role_id')->index()->nullable();
-            $table->integer('nis')->nullable();
-            $table->integer('nip')->nullable();
-            $table->string('position')->nullable();
-            $table->integer('tahun_masuk')->nullable();
-            $table->string('origin_of_school')->nullable();
+            $table->integer('nis')->nullable(); //murid
+            $table->integer('nip')->nullable(); //guru
+            $table->string('position')->nullable(); //guru
+            $table->integer('tahun_masuk')->nullable(); //murid
+            $table->string('origin_of_school')->nullable(); //murid
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

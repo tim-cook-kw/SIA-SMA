@@ -13718,6 +13718,8 @@ body.swal2-no-backdrop .swal2-shown.swal2-bottom-right {
 
 .swal2-close {
   position: absolute;
+  z-index: 2;
+  /* 1617 */
   top: 0;
   right: 0;
   justify-content: center;
