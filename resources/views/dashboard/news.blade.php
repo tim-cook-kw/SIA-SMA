@@ -3,7 +3,7 @@
 <div class="table-wrapper">
     <div class="table-title">
         <div class="pull-right">
-            <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#tmbh_kesiswaan"><i
+            <button class="btn btn-default-btn-xs btn-success" data-toggle="modal" data-target="#news"><i
                     class="glyphicon glyphicon-plus"></i> New</button>
             <div class="row">
                 <div class="col-sm-4">
@@ -43,19 +43,23 @@
         </tr>
     </thead>
     <tbody>
+        @foreach($news as $k)
         <tr>
             <td>1</td>
-            <td>Pramuka</td>
-            <td>Pramuka adalah suatau gerakan gerakan </td>
+            <td>{{$k->nama}}</td>
+            <td>{{$k->description}}</td>
+            <td>{{$k->image}}</td>
+
             <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
                 height="60"> </td>
             <td>
-                    <button data-toggle="modal" data-target="#update_kesiswaan" class="edit" title="Edit"><i
+                    <button data-toggle="modal" data-target="#update_news" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
                         <a href="master_kesiswaan/" class="delete" title="Delete" data-toggle="tooltip"><i
                             class="material-icons">&#xE872;</i></a>
             </td>
         </tr>
+        @endforeach
     </tbody>
 </table>
 <div class="clearfix">
@@ -72,5 +76,6 @@
 </div>
 </div>
 </div>
-
+@include('dashboard.modal.add_news')
+@include('dashboard.modal.update_news')
 @endsection

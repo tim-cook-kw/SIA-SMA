@@ -105,21 +105,20 @@ Route::post('/master_parent/add','MasterController@parent');
 Route::get('/master_parent/del/{id}','MasterController@hapus_parent');
 Route::post('/master_parent/update/','MasterController@update_parent');
 
+Route::get('/dashboard_news','DashboardController@get_news');
+Route::post('/dashboard_news/add','DashboardController@news');
+Route::get('/dashboard_news/del/{id}','DashboardController@hapus_news');
+Route::post('/dashboard_news/update/','Dashboard@update_news');
 
+Route::get('/dashboard_program','DashboardController@get_program');
+Route::post('/dashboard_program/add','DashboardController@program');
+Route::get('/dashboard_program/del/{id}','DashboardController@hapus_program');
+Route::post('/dashboard_program/update/','DashboardController@update_program');
 
 Route::get('/nilai_tugas',function(){
     return view('akademik.nilai_tugas');
 });
-Route::get('/program',function(){
-    return view('dashboard.program');
-});
-Route::get('/news',function(){
-    return view('dashboard.news');
-});
 
-Route::get('/dashboard/news',function(){
-    return view('news');
-});
 Route::get('/dashboard/teacher',function(){
     return view('teacher');
 });

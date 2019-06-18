@@ -36,14 +36,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="{{url('program')}}">
-                                    <span class="nav-text">Program</span>
+                                <a class="sidenav-item-link" href="{{url('dashboard_news')}}">
+                                    <span class="nav-text">News</span>
 
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="{{url('news')}}">
-                                    <span class="nav-text">News</span>
+                                <a class="sidenav-item-link" href="{{url('dashboard_program')}}">
+                                    <span class="nav-text">Program</span>
 
                                 </a>
                             </li>
