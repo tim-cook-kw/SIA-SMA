@@ -48,14 +48,12 @@
             <td>1</td>
             <td>{{$k->nama}}</td>
             <td>{{$k->description}}</td>
-            <td>{{$k->image}}</td>
-
-            <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
+            <td><img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
                 height="60"> </td>
             <td>
                     <button data-toggle="modal" data-target="#update_news" class="edit" title="Edit"><i
                         class="material-icons">&#xE254;</i></button>
-                        <a href="master_kesiswaan/" class="delete" title="Delete" data-toggle="tooltip"><i
+                        <a href="/dashboard_news/del/{{ $k-> id }}" class="delete" title="Delete"><i
                             class="material-icons">&#xE872;</i></a>
             </td>
         </tr>

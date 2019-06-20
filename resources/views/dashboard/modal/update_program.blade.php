@@ -1,4 +1,4 @@
-<div id="modalUpdate" class="modal fade" role="dialog">
+<div id="update_program" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
         <!-- Modal content-->

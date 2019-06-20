@@ -25,7 +25,7 @@ class DashboardController extends Controller
     {
         $db = DB::table('news')->where('id',$id);
         $db->delete();
-        return redirect()-back();
+        return redirect()->back();
     }
     public function update_News(Request $request)
     {
