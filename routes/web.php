@@ -36,6 +36,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('role', 'Admin\RoleController');
     Route::resource('class', 'Admin\ClassController');
     Route::resource('staff', 'Admin\StaffingController');
+    Route::resource('student', 'Admin\StudentController');
 });
 
 Route::prefix('datatable')->group(function () {
@@ -43,6 +44,7 @@ Route::prefix('datatable')->group(function () {
     Route::get('role-datatable', 'DataTable\RoleDataTableController@index')->name('datatable.role');
     Route::get('class-datatable', 'DataTable\ClassDataTableController@index')->name('datatable.class');
     Route::get('staff-datatable', 'DataTable\StaffingDataTableController@index')->name('datatable.staff');
+    Route::get('student-datatable', 'DataTable\StudentDataTableController@index')->name('datatable.student');
 });
 
 Route::get('/blog_details', function () {
