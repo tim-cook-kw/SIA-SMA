@@ -9,9 +9,11 @@
             <div class="form-group">
                 <label for="{{ $input['name'] }}" id="{{ $input['label_id'] }}">{{ $input['header'] }}</label>
                 <select class="form-control" id="{{ $input['name'] }}" name="{{ $input['name'] }}">
-                    @foreach ($input['value'] as $item)
-                        <option value="{{ $item->selectValue() }}">{{ $item->selectText() }}</option>
-                    @endforeach
+                    @forelse ($input['value'] as $item)
+                    <option value="{{ $item->selectValue() }}">{{ $item->selectText() }}</option>
+                    @empty
+                    <option>-- No Data --</option>
+                    @endforelse
                 </select>
             </div>
             @elseif($input['type'] == 'year')
