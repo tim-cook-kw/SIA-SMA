@@ -35,7 +35,7 @@
     <thead>
         <tr>
             <th>No</th>
-            <th>Nama Extrakulikuler <i class="fa fa-sort"></i></th>
+            <th>Nama Extrakulikuler</th>
             <th>Description</th>
             <th>Foto  </th>
 
@@ -48,8 +48,8 @@
             <td>1</td>
             <td>{{$k->nama}}</td>
             <td>{{$k->description}}</td>
-            <td>{{$k->image}}</td>
-            <td> <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
+            <td>{{$k->image}}
+           <img src="https://www.w3schools.com/bootstrap/cinqueterre.jpg" class="ch-item ch-img-2" width="90"
                 height="60"> </td>
             <td>
                     <button data-toggle="modal" data-target="#update_program" class="edit" title="Edit"><i
