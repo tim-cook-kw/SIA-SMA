@@ -10,7 +10,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-12 col-sm-12 text-center">
                             <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
-                                <h2 class="font-weight-bold animation text-uppercase" data-animation="zoomIn" data-animation-delay="1s">Welcome To <span class="text_default">eduglobal</span> University</h2>
+                                <h2 class="font-weight-bold animation text-uppercase" data-animation="zoomIn" data-animation-delay="1s">Welcome To <span class="text_default">sma islamic </span>boarding school</h2>
                                 <p class="animation" data-animation="zoomIn" data-animation-delay="1.5s">Lorem is simply text of the printing and typesetting industry.</p>
                                 <a class="btn btn-default animation rounded-0" href="#" data-animation="zoomIn" data-animation-delay="1.8s">Get Started</a>
                                 <a class="btn btn-outline-white animation rounded-0" href="#" data-animation="zoomIn" data-animation-delay="1.8s">Learn More</a>
@@ -36,7 +36,7 @@
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/Tempatgambar/images.jpg')}}">
+            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/Tempatgambar/3.jpg')}}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row justify-content-center">
@@ -52,7 +52,7 @@
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/banner10.jpg')}}">
+            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/Tempatgambar/2.jpg')}}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row justify-content-center">

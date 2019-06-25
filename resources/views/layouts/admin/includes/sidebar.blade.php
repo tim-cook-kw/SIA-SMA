@@ -83,6 +83,18 @@
 
                                 </a>
                             </li>
+                            <li class="active">
+                                <a class="sidenav-item-link" href="{{url('master_absen')}}">
+                                    <span class="nav-text">Absensi Siswa</span>
+
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a class="sidenav-item-link" href="{{url('master_guru')}}">
+                                    <span class="nav-text">Absensi Guru</span>
+
+                                </a>
+                            </li>
 
                         </div>
                     </ul>

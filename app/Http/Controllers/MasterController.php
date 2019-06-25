@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use DB;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class MasterController extends Controller
@@ -166,6 +167,37 @@ class MasterController extends Controller
          ]);
         return redirect()->back();
     }
+    public function absen(Request $request)
+    {
+      DB::table('absen')->insert([
+        'nama_siswa'=> $request->nama_siswa,
+        'waktu' => Carbon::now(),
+        'keterangan'=> $request->keterangan,
+      ]);
+      return redirect()->back();
+    }
+    public function get_absen()
+    {
+        $absen = DB::table('absen')->get();
+        return view('master.absen',compact('absen'));
+    }
+    public function hapus_absen($id)
+    {
+       $db = DB::table('absen')->where('id',$id);
+       $db->delete();
+       return redirect()->back();
+    }
+    public function update_absen(Request $request)
 
+    {
+         DB::table('absen')->where('id',$request->id)->update([
+            'nama_siswa'=> $request->nama_siswa,
+            'nama_jurusan'=> $request->nama_jurusan,
+            'waktu' => Carbon::now(),
+            'keterangan'=> $request->keterangan,
+
+         ]);
+        return redirect()->back();
+    }
 }
 

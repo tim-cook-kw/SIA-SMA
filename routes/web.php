@@ -75,6 +75,11 @@ Route::post('/master_mata_pelajaran/add','MasterController@mata_pelajaran');
 Route::get('/master_mata_pelajaran/{id}','MasterController@hapus_mata_pelajaran');
 Route::post('/master_mata_pelajaran/update/{id}','MasterController@update_mata_pelajaran');
 
+Route::get('/master_absen','MasterController@get_absen');
+Route::post('/master_absen/add','MasterController@absen');
+Route::get('/master_absen/del/{id}','MasterController@hapus_absen');
+Route::post('/master_absen/update/','MasterController@update_absen');
+
 
 Route::get('/akademik_jadwal_guru','AkademikController@get_jadwal_guru');
 Route::post('/akademik_jadwal_guru/add','AkademikController@jadwal_guru');
@@ -120,6 +125,8 @@ Route::get('/dashboard_program','DashboardController@get_program');
 Route::post('/dashboard_program/add','DashboardController@program');
 Route::get('/dashboard_program/del/{id}','DashboardController@hapus_program');
 Route::post('/dashboard_program/update/{id}','DashboardController@update_program');
+
+
 
 Route::get('/nilai_tugas',function(){
     return view('akademik.nilai_tugas');
