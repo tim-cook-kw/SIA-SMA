@@ -119,6 +119,7 @@ class MasterController extends Controller
     {
          DB::table('mata_pelajaran')->where('id',$request->id)->update([
             'nama_pelajaran'=> $request->nama_pelajaran,
+            'nama_jurusan' => $request->nama_jurusan,
             'nama_guru'=> $request->nama,
 
          ]);

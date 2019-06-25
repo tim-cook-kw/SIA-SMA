@@ -18,6 +18,10 @@
                             <label for="inputEmail4">Nama Guru</label>
                             <input type="text" name="nama" class="form-control" id="inputEmail4" placeholder="Nama">
                         </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Nama Jurusan</label>
+                            <input type="text" name="nama_jurusan" class="form-control" id="inputEmail4" placeholder="Nama">
+                        </div>
 
                     </div>
 

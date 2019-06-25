@@ -26,7 +26,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-12 col-sm-12 text-center">
                                 <div class="banner_content animation text_white" data-animation="fadeIn" data-animation-delay="0.8s">
-                                    <h2 class="font-weight-bold animation text-uppercase" data-animation="zoomIn" data-animation-delay="1s">find your perfect <span class="text_default">University</span></h2>
+                                    <h2 class="font-weight-bold animation text-uppercase" data-animation="zoomIn" data-animation-delay="1s">education for <span class="text_default">moesloem people</span></h2>
                                     <p class="animation" data-animation="zoomIn" data-animation-delay="1.5s">Contrary to popular belief, Lorem Ipsum is not simply random</p>
                                     <a class="btn btn-default animation rounded-0" href="#" data-animation="zoomIn" data-animation-delay="1.8s">Get Started</a>
                                     <a class="btn btn-outline-white animation rounded-0" href="#" data-animation="zoomIn" data-animation-delay="1.8s">Learn More</a>
@@ -36,7 +36,7 @@
                     </div><!-- END CONTAINER-->
                 </div>
             </div>
-            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/banner9.jpg')}}">
+            <div class="carousel-item background_bg overlay_bg_50" data-img-src="{{asset('template/images/Tempatgambar/images.jpg')}}">
                 <div class="banner_slide_content">
                     <div class="container"><!-- STRART CONTAINER -->
                         <div class="row justify-content-center">
@@ -58,7 +58,7 @@
                         <div class="row justify-content-center">
                             <div class="col-lg-12 col-sm-12 text-right">
                                 <div class="banner_content animation text_white" data-animation="fadeInRight" data-animation-delay="0.8s">
-                                    <h2 class="font-weight-bold animation text-uppercase" data-animation="fadeInRight" data-animation-delay="1s">best <span class="text_default"> online training</span> course</h2>
+                                    <h2 class="font-weight-bold animation text-uppercase" data-animation="fadeInRight" data-animation-delay="1s">best <span class="text_default"> favorite</span> school</h2>
                                     <p class="animation" data-animation="fadeInRight" data-animation-delay="1.5s">Contrary to popular belief, Lorem Ipsum is not simply random</p>
                                     <a class="btn btn-default animation rounded-0" href="#" data-animation="fadeInRight" data-animation-delay="1.8s">Get Started</a>
                                     <a class="btn btn-outline-white animation rounded-0" href="#" data-animation="fadeInRight" data-animation-delay="1.8s">Learn More</a>

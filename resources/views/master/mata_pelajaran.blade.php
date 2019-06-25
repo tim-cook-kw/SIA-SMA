@@ -37,6 +37,7 @@
             <th>No</th>
             <th>kode pelajaran<i class="fa fa-sort"></i></th>
             <th>Nama Pelajaran</th>
+            <th>Nama Jurusan
             <th>Nama Guru<i class="fa fa-sort"></i></th>
             <th>Actions</th>
         </tr>
@@ -48,6 +49,7 @@
             <td>1</td>
             <td>00010010000</td>
             <td>{{ $k->nama_pelajaran }}</td>
+            <td>{{ $k->nama_jurusan }}</td>
             <td>{{ $k->nama_guru }}</td>
             <td>
                     <button data-toggle="modal" data-target="#update_mata_pelajaran" class="edit" title="Edit"><i

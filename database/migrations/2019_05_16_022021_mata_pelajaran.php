@@ -16,6 +16,7 @@ class MataPelajaran extends Migration
         Schema::create('mata_pelajaran', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nama_pelajaran');
+            $table->string('nama_jurusan');
             $table->string('nama_guru');
         });
     }
