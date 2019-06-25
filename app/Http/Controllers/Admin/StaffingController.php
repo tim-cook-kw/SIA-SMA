@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Enums\UserType;
 
 class StaffingController extends Controller
 {
@@ -15,11 +16,15 @@ class StaffingController extends Controller
 
     public function store(Request $request)
     {
-        $uploadedFile = $request->file('image');
-        $path = $uploadedFile->store('public/image');
+        
         $data = $request->all();
         $data['password'] = 'test';
-        $data['image'] = $path;
+        $data['role_id'] = UserType::Staff;
+        if ($request->hasFile('image')) {
+            $uploadedFile = $request->file('image');
+            $path = $uploadedFile->store('public/image');
+            $data['image'] = $path;
+        }
         // $request->merge([
         //     'password' => 'test',
         //     'image' => $path,
@@ -35,7 +40,16 @@ class StaffingController extends Controller
 
     public function update(Request $request, User $staff)
     {
-        $staff->update($request->all());
+        $data = $request->all();
+        if ($request->hasFile('image')) {
+            Storage::disk('public')->delete($staff->image);
+            $data['image'] = $request->file('image')->store('public/image');;
+            $staff->update($data);
+            return json_encode(['staff' => $staff]);
+        }
+        $staff->update($request->except('image'));
+        return json_encode(['staff' => $staff]);
+        // $student->update($request->all());
     }
 
     public function destroy(User $staff)

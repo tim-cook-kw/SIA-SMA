@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Enums\UserType;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
@@ -43,4 +44,23 @@ class User extends Authenticatable
     protected $attributes = [
         'image' => 'default.png'
     ];
+
+    public function scopeTeacher($query)
+    {
+        return $query->where('role_id', UserType::Staff)->get();
+    }
+
+    public function scopeStudent($query)
+    {
+        return $query->where('role_id', UserType::Student)->get();
+    }
+
+    public function selectValue()
+    {
+        return $this->id;
+    }
+    public function selectText()
+    {
+        return $this->name;
+    }
 }
