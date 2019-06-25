@@ -11,7 +11,7 @@ class StaffingDataTableController extends Controller
 {
     public function index()
     {
-        $user = User::all();
+        $user = User::teacher();
         $data = [];
         foreach ($user as $index => $list) {
             $row = [];
