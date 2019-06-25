@@ -11,7 +11,7 @@ class StudentDataTableController extends Controller
 {
     public function index()
     {
-        $user = User::all();
+        $user = User::student();
         $data = [];
         foreach ($user as $index => $list) {
             $row = [];
