@@ -61,14 +61,14 @@
                         <div class="sub-menu">
 
                             <li>
-                                <a class="sidenav-item-link" href="{{url('master_kepegaiawan')}}">
+                                <a class="sidenav-item-link" href="{{route('staff.index')}}">
                                     <span class="nav-text">Kepegaiwan</span>
 
                                 </a>
                             </li>
 
                             <li class="active">
-                                <a class="sidenav-item-link" href="{{url('master_kesiswaan')}}">
+                                <a class="sidenav-item-link" href="{{route('student.index')}}">
                                     <span class="nav-text">Kesiswaaan</span>
                                 </a>
                             </li>
@@ -78,7 +78,7 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="sidenav-item-link" href="{{url('master_mata_pelajaran')}}">
+                                <a class="sidenav-item-link" href="{{route('subject.index')}}">
                                     <span class="nav-text">Mata Pelajaran</span>
 
                                 </a>
