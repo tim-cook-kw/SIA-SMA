@@ -30,14 +30,9 @@
                         <input type="text" name="keterangan" class="form-control" id="inputEmail4" placeholder="Nama">
                     </div>
 
-
                 </div>
 
-
-
                     <div class="form-row">
-
-
 
                     </div>
 

@@ -130,6 +130,11 @@ Route::post('/dashboard_program/update/{id}','DashboardController@update_program
 
 
 
+Route::get('/dashboard/berita',function(){
+    return view('berita');
+});
+
+
 Route::get('/nilai_tugas',function(){
     return view('akademik.nilai_tugas');
 });

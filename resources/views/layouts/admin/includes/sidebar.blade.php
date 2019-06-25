@@ -77,7 +77,7 @@
                                     <span class="nav-text"> Parent </span>
                                 </a>
                             </li>
-                            <li>
+                                <li class="active">
                                 <a class="sidenav-item-link" href="{{route('subject.index')}}">
                                     <span class="nav-text">Mata Pelajaran</span>
 

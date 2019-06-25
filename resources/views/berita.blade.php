@@ -1,4 +1,4 @@
-@extends('layouts.page.app')
+@extends('layout.page.header')
 @section('content')
 <section class="page-title-light breadcrumb_section parallax_bg overlay_bg_50" data-parallax-bg-image="assets/images/about_bg.jpg">
 	<div class="container">

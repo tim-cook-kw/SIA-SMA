@@ -153,7 +153,7 @@
                         <a class="dropdown-toggle nav-link active" href="#" data-toggle="dropdown">Dashboard</a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li><a class="dropdown-item nav-link nav_item" href="/dashboard/news">News</a>
+                                <li><a class="dropdown-item nav-link nav_item" href="{{url('dashboard/berita')}}">News</a>
                                 </li>
                                 <li><a class="dropdown-item nav-link nav_item active" href=""></a></li>
                             </ul>
