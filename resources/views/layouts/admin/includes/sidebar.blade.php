@@ -77,9 +77,21 @@
                                     <span class="nav-text"> Parent </span>
                                 </a>
                             </li>
-                            <li>
+                                <li class="active">
                                 <a class="sidenav-item-link" href="{{route('subject.index')}}">
                                     <span class="nav-text">Mata Pelajaran</span>
+
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a class="sidenav-item-link" href="{{url('master_absen')}}">
+                                    <span class="nav-text">Absensi Siswa</span>
+
+                                </a>
+                            </li>
+                            <li class="active">
+                                <a class="sidenav-item-link" href="{{url('master_guru')}}">
+                                    <span class="nav-text">Absensi Guru</span>
 
                                 </a>
                             </li>
