@@ -116,7 +116,7 @@
                                     <div class="sub-menu">
 
                                         <li>
-                                            <a href="{{url('akademik_kelola_kelas')}}">Kelola kelas</a>
+                                            <a href="{{route('class.index')}}">Kelola kelas</a>
                                         </li>
 
                                         <li>
