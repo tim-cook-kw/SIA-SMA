@@ -15,10 +15,10 @@ class Kelas extends Migration
     {
         Schema::create('kelas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('code_class');
-            $table->string('class_name');
-            $table->string('nama_guru');
-            $table->string('tahun_ajaran');
+            $table->integer('user_id');
+            $table->string('code');
+            $table->string('name');
+            // $table->string('year');
             $table->timestamps();
         });
     }

@@ -37,12 +37,12 @@
 'modal_id' => 'input-class-modal',
 'modal_header' => 'Class',
 'inputs' => [
-['name' => 'code_class', 'type' => 'text' , 'value' => '', 'header' => 'Kode Kelas', 'label_id' => 'label_code_class'],
-['name' => 'class_name', 'type' => 'text' , 'value' => '', 'header' => 'Nama Kelas', 'label_id' => 'label_name_class'],
-['name' => 'nama_guru', 'type' => 'text', 'value' => '', 'header' => 'Guru/Wali Kelas', 'label_id' =>
-'label_guru_class'],
-['name' => 'tahun_ajaran', 'type' => 'year', 'value' => '', 'header' => 'Tahun Ajaran', 'label_id' =>
-'label_tahun_class', 'year' => 'tahun_ajaran'],
+// ['name' => 'code_class', 'type' => 'text' , 'value' => '', 'header' => 'Kode Kelas', 'label_id' => 'label_code_class'],
+['name' => 'name', 'type' => 'text' , 'value' => '', 'header' => 'Nama Kelas', 'label_id' => 'label_name_class'],
+['name' => 'user_id', 'type' => 'select', 'value' => $teacher, 'header' => 'Guru/Wali Kelas', 'label_id' =>
+'label_teacher_class'],
+// ['name' => 'year', 'type' => 'year', 'value' => '', 'header' => 'Tahun Ajaran', 'label_id' =>
+// 'label_tahun_class', 'year' => 'tahun_ajaran'],
 ]
 ])
 @endcomponent
@@ -85,12 +85,6 @@
                 });
                 return false;
             }
-        });
-        $("#tahun_ajaran").datepicker({
-            format: "yyyy",
-            viewMode: "years",
-            minViewMode: "years",
-            autoclose: true
         });
     });
 

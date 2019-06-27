@@ -16,7 +16,7 @@
                     @forelse ($input['value'] as $item)
                     <option value="{{ $item->selectValue() }}">{{ $item->selectText() }}</option>
                     @empty
-                    <option>-- No Data --</option>
+                    <option disabled>-- No Data --</option>
                     @endforelse
                 </select>
             </div>

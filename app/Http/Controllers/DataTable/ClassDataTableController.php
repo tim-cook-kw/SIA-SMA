@@ -15,10 +15,10 @@ class ClassDataTableController extends Controller
         foreach ($class as $index => $list) {
             $row = [];
             $row[] = ++$index;
-            $row[] = $list->code_class;
-            $row[] = $list->class_name;
-            $row[] = $list->nama_guru;
-            $row[] = $list->tahun_ajaran;
+            $row[] = $list->code;
+            $row[] = $list->name;
+            $row[] = $list->user->name;
+            // $row[] = $list->year;
             $row[] = '<div class="text-center"><div class="btn-group">
                <button type="button" onclick="editForm(' . $list->id . ')" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></button>
                <button type="button" onclick="deleteData(' . $list->id . ')" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></button></div></div>';

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\User;
 use App\Kelas;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -10,17 +11,20 @@ class ClassController extends Controller
 {
     public function index()
     {
-        return view('admin.class.index');
+        $teacher = User::teacher();
+        return view('admin.class.index', compact('teacher'));
     }
 
     public function store(Request $request)
     {
-        $kelas = Kelas::create([
-            'code_class'=> $request->code_class,
-            'class_name'=> $request->class_name,
-            'nama_guru'=> $request->nama_guru,
-            'tahun_ajaran'=> $request->tahun_ajaran,
-        ]);
+        $request->merge(['code' => uniqid()]);
+        Kelas::create($request->all());
+        // Kelas::create([
+        //     'code_class'=> $request->code_class,
+        //     'class_name'=> $request->class_name,
+        //     'nama_guru'=> $request->nama_guru,
+        //     'tahun_ajaran'=> $request->tahun_ajaran,
+        // ]);
     }
 
     public function edit(Kelas $class)
