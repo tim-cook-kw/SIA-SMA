@@ -5,5 +5,7 @@
     "/css/datatable.css": "/css/datatable.css",
     "/js/moment.js": "/js/moment.js",
     "/js/nprogress.js": "/js/nprogress.js",
-    "/css/nprogress.css": "/css/nprogress.css"
+    "/css/nprogress.css": "/css/nprogress.css",
+    "/js/chosen.js": "/js/chosen.js",
+    "/css/component-chosen.css": "/css/component-chosen.css"
 }

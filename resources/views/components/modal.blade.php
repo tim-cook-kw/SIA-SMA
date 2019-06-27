@@ -1,3 +1,7 @@
+@push('styles')
+<link rel="stylesheet" href="{{ asset('css/component-chosen.css') }}">
+@endpush
+
 <div class="modal fade" id="{{ $modal_id }}" tabindex="-1" role="dialog" aria-labelledby="{{ $modal_id }}"
     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
@@ -8,7 +12,7 @@
             @if ($input['type'] == 'select')
             <div class="form-group">
                 <label for="{{ $input['name'] }}" id="{{ $input['label_id'] }}">{{ $input['header'] }}</label>
-                <select class="form-control" id="{{ $input['name'] }}" name="{{ $input['name'] }}">
+                <select data-placeholder="{{ $input['header'] }}" class="form-control chosen-select" id="{{ $input['name'] }}" name="{{ $input['name'] }}">
                     @forelse ($input['value'] as $item)
                     <option value="{{ $item->selectValue() }}">{{ $item->selectText() }}</option>
                     @empty
@@ -44,3 +48,12 @@
         </div>
     </div>
 </div>
+
+@push('scripts')
+<script type="text/javascript" src="{{ asset('js/chosen.js') }}"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $(".chosen-select").chosen();
+});
+</script>
+@endpush

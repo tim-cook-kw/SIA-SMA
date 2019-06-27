@@ -4,7 +4,7 @@
 @endpush
 @section('content')
 <div class="breadcrumb-wrapper">
-    <h1>Management Class</h1>
+    <h1>Kelola Kelas</h1>
 </div>
 <div class="row">
     <div class="col-lg-12">
