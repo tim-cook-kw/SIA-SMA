@@ -28,6 +28,9 @@ Route::get('/blog', function () {
     return view('blog');
 });
 
+//how to search
+Route::get('searchable', 'SearchableController@index')->name('searchable');
+
 Route::prefix('admin')->group(function () {
     Route::get('dashboard', function () {
         return view('admin.index');

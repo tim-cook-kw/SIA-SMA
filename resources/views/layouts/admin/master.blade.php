@@ -20,6 +20,7 @@
     <link href="https://cdn.materialdesignicons.com/3.0.39/css/materialdesignicons.min.css" rel="stylesheet" />
     <link href="{{ asset('css/table.css') }}" rel="stylesheet">
     <link href="{{ asset('css/nprogress.css') }}" rel="stylesheet">
+
     @stack('styles')
     <!--
     HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries
@@ -83,6 +84,11 @@
     </div>
 
     <script type="text/javascript" src="{{ asset('js/moment.js') }}"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".select2-dashboard").select2();
+        });
+    </script>
     @stack('scripts')
 </body>
 
